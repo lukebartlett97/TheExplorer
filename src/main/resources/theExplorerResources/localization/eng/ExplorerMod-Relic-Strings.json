@@ -1,0 +1,76 @@
+{
+  "theExplorer:PlaceholderRelic": {
+    "NAME": "Placeholder Energy Relic",
+    "FLAVOR": "The snake is a friend.",
+    "DESCRIPTIONS": [
+      "Gain #b1 [E] ."
+    ]
+  },
+  "theExplorer:PlaceholderRelic2": {
+    "NAME": "Placeholder Relic 2",
+    "FLAVOR": "You feel stronger.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain #b1 #yStrength."
+    ]
+  },
+  "theExplorer:DefaultClickableRelic": {
+    "NAME": "Right-Clicky Relic",
+    "FLAVOR": "The more you right-click it, the more orbs you've evoked in your lifetime.",
+    "DESCRIPTIONS": [
+      "[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
+      "YOU ARE MINE!"
+    ]
+  },
+  "theExplorer:BottledPlaceholderRelic": {
+    "NAME": "Bottled Placeholder",
+    "FLAVOR": "What is this?",
+    "DESCRIPTIONS": [
+      "Choose a card. Whenever you take play any card, draw the chosen card.",
+      "Whenever you play a card, draw ",
+      ".",
+      "Select a card to bottle for "
+    ]
+  },
+  "theExplorer:JarOfDirt": {
+    "NAME": "Jar of Dirt",
+    "FLAVOR": "It's a Jar of Dirt, what do you expect?",
+    "DESCRIPTIONS": [
+      "At the beginning of combat, add 2 random Plants to your hand."
+    ]
+  },
+  "theExplorer:Journal": {
+    "NAME": "Journal",
+    "FLAVOR": "It's a book...",
+    "DESCRIPTIONS": [
+      "Whenever you complete a research, gain a random bonus."
+    ]
+  },
+  "theExplorer:Leftovers": {
+    "NAME": "Leftovers",
+    "FLAVOR": "Everything has a use.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal 1 damage to all enemies for each card in hand."
+    ]
+  },
+  "theExplorer:Painkiller": {
+    "NAME": "Painkiller",
+    "FLAVOR": "Feeling better already.",
+    "DESCRIPTIONS": [
+      "Whenever a debuff is applied to you, reduce it by 1 (but not below 1)."
+    ]
+  },
+  "theExplorer:Quill": {
+    "NAME": "Quill",
+    "FLAVOR": "To be or not to be?",
+    "DESCRIPTIONS": [
+      "Whenever you complete a research, gain 1 Energised."
+    ]
+  },
+  "theExplorer:Whistle": {
+    "NAME": "Whistle",
+    "FLAVOR": "Who's a good boy?",
+    "DESCRIPTIONS": [
+      "Whenever your companion uses its ability, gain 4 block."
+    ]
+  }
+}

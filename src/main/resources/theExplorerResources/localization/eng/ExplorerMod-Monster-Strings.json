@@ -1,0 +1,22 @@
+{
+  "theExplorer:Frog": {
+    "NAME": "Phrog",
+    "MOVES": ["Tongue Lash", "Hop", "Croak"],
+    "DIALOG": []
+  },
+  "theExplorer:Snek": {
+  "NAME": "Snek",
+  "MOVES": ["Venomous Bite", "Bite", "Glare"],
+  "DIALOG": []
+  },
+  "theExplorer:Scorpy": {
+    "NAME": "Scorpy",
+    "MOVES": ["Sting", "Pincers", "Curl"],
+    "DIALOG": []
+  },
+  "theExplorer:Box": {
+    "NAME": "Box",
+    "MOVES": ["Enrage"],
+    "DIALOG": ["Ribbit", "Sssss", "..."]
+  }
+}

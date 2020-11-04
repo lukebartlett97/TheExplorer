@@ -1,0 +1,92 @@
+[
+  {
+    "NAMES": [
+      "keyword",
+      "keywords"
+    ],
+    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+  },
+  {
+    "PROPER_NAME": "Unique",
+    "NAMES": [
+      "Unique",
+      "unique"
+    ],
+    "DESCRIPTION": "Does not stack."
+  },
+  {
+    "PROPER_NAME": "Temporary",
+    "NAMES": [
+      "Temporary",
+      "temporary"
+    ],
+    "DESCRIPTION": "Removed from your deck on use and end of turn."
+  },
+  {
+    "PROPER_NAME": "Research",
+    "NAMES": [
+      "Research",
+      "research",
+      "Researching",
+      "researching",
+      "Researched",
+      "researched"
+    ],
+    "DESCRIPTION": "Kill an enemy being researched to complete it."
+  },
+  {
+    "PROPER_NAME": "Concoct",
+    "NAMES": [
+      "Concoct",
+      "concoct"
+    ],
+    "DESCRIPTION": "Discard a card and gain a bonus depending which type is discarded."
+  },
+  {
+    "PROPER_NAME": "Constrict",
+    "NAMES": [
+      "Constrict",
+      "constrict"
+    ],
+    "DESCRIPTION": "Take X damage at the end of each turn."
+  },
+  {
+    "PROPER_NAME": "Energised",
+    "NAMES": [
+      "Energised",
+      "energised"
+    ],
+    "DESCRIPTION": "Gain [E] at the start of your turn."
+  },
+  {
+    "PROPER_NAME": "Companion",
+    "NAMES": [
+      "Companion",
+      "Companion's",
+      "Companions",
+      "companion",
+      "companion's",
+      "companions"
+    ],
+    "DESCRIPTION": "You can have 1 companion at a time. Evolves each act to get stronger."
+  },
+  {
+    "PROPER_NAME": "Highlander",
+    "NAMES": [
+      "Highlander",
+      "highlander"
+    ],
+    "DESCRIPTION": "Only playable if every card in your deck in unique."
+  },
+  {
+    "PROPER_NAME": "Multiword Keyword",
+    "NAMES": [
+      "Multiword Keyword",
+      "multiword_keyword",
+      "multiword_keywords",
+      "multikey",
+      "multikeyword"
+    ],
+    "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  }
+]

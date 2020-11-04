@@ -1,0 +1,14 @@
+{
+        "theExplorer:TransmogPotion": {
+        "NAME": "Transmog Potion",
+        "DESCRIPTIONS": ["Transform a non-boss enemy into a random researched enemy."]
+        },
+        "theExplorer:AnimalPotion": {
+                "NAME": "Animal Potion",
+                "DESCRIPTIONS": ["Evolve your companion until end of combat."]
+        },
+        "theExplorer:DrowsyPotion": {
+                "NAME": "Drowsy Potion",
+                "DESCRIPTIONS": ["In 3 turns, Stun an enemy for #b", " turn(s)."]
+        }
+}

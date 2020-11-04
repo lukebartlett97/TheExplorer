@@ -1,0 +1,357 @@
+{
+  "theExplorer:AcidRain": {
+    "NAME": "Acid Rain",
+    "DESCRIPTION": "Apply !M! Poison to everyone. (Including yourself)."
+  },
+  "theExplorer:Battery": {
+    "NAME": "Battery",
+    "DESCRIPTION": "Purge. Ethereal. NL Store X Energy.",
+    "UPGRADE_DESCRIPTION": "Purge. Ethereal. NL Store X+1 Energy."
+  },
+  "theExplorer:BigBrainForm": {
+    "NAME": "Big Brain Form",
+    "DESCRIPTION": "At the start of your turn, spend a Research Stack to gain 2 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, spend a Research Stack to gain 2 Dexterity."
+  },
+  "theExplorer:Birdcall": {
+    "NAME": "Birdcall",
+    "DESCRIPTION": "Reduce the cost of all cards in your hand by 1 until end of turn.",
+    "UPGRADE_DESCRIPTION": "Reduce the cost of all cards in your deck by 1 until end of turn."
+  },
+  "theExplorer:BlisteringPlant": {
+    "NAME": "Blistering Plant",
+    "DESCRIPTION": "Apply !M! Vulnerable. NL Exhaust."
+  },
+  "theExplorer:BoxOfTricks": {
+    "NAME": "Box Of Tricks",
+    "DESCRIPTION": "Deal !D! damage. NL Costs 1 less for each card type played this turn. (e.g. Attack, Skill)"
+  },
+  "theExplorer:Brace": {
+    "NAME": "Brace",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "theExplorer:BrambleWeed": {
+    "NAME": "Bramble Weed",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL For each enemy dealt unblocked damage, add a [#458B00]Plant[] to your hand."
+  },
+  "theExplorer:BranchSnap": {
+    "NAME": "Branch Snap",
+    "DESCRIPTION": "Deal !D! damage. NL Vulnerable effects this card twice."
+  },
+  "theExplorer:CalmingRest": {
+    "NAME": "Calming Rest",
+    "DESCRIPTION": "Gain !B! Block for each time your companion has used its ability this combat.",
+    "EXTENDED_DESCRIPTION": [" (", " time)", " times)"]
+  },
+  "theExplorer:Camouflage": {
+    "NAME": "Camouflage",
+    "DESCRIPTION": "Gain !M! Dexterity. NL At the end of your turn, lose !M! Dexterity."
+  },
+  "theExplorer:Cleanse": {
+    "NAME": "Cleanse",
+    "DESCRIPTION": "Remove all Debuffs from yourself. NL Gain !B! Block for each one removed. NL Exhaust."
+  },
+  "theExplorer:Command": {
+    "NAME": "Command",
+    "DESCRIPTION": "Deal !D! damage. Trigger your theexplorer:Companion's ability."
+  },
+  "theExplorer:Contagion": {
+    "NAME": "Contagion",
+    "DESCRIPTION": "Whenever you apply Poison to an enemy, apply it to all enemies instead."
+  },
+  "theExplorer:CorruptedBlade": {
+    "NAME": "Corrupted Blade",
+    "DESCRIPTION": "Deal !D! damage. If this deals unblocked damage, apply !M! Poison."
+  },
+  "theExplorer:Decoy": {
+    "NAME": "Decoy",
+    "DESCRIPTION": "If you have played a Defend this turn, prevent the next time you would take damage."
+  },
+  "theExplorer:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "theExplorer:DoubleUp": {
+    "NAME": "Double Up",
+    "DESCRIPTION": "This turn, your next 0-cost card is played twice.",
+    "UPGRADE_DESCRIPTION": "This turn, your next 2 0-cost cards are played twice."
+  },
+  "theExplorer:DuplicAnts": {
+    "NAME": "Duplic Ants",
+    "DESCRIPTION": "Gain !B! Block. NL Add 2 Duplic Ants to your hand. NL Exhaust."
+  },
+  "theExplorer:EmergencySupplies": {
+    "NAME": "Emergency Supplies",
+    "DESCRIPTION": "Gain !B! Block. NL If you are below 20% health, heal for !M! and Exhaust."
+  },
+  "theExplorer:Exhilarate": {
+    "NAME": "Exhilarate",
+    "DESCRIPTION": "Gain !M! Strength. NL At the end of each turn, lose 1 Strength."
+  },
+  "theExplorer:Fertilizer": {
+    "NAME": "Fertilizer",
+    "DESCRIPTION": "Upgrade all [#458B00]Plants[] in hand.",
+    "UPGRADE_DESCRIPTION": "Upgrade all [#458B00]Plants[] in all locations."
+  },
+  "theExplorer:FindingBalance": {
+    "NAME": "Finding Balance",
+    "DESCRIPTION": "Deal !D! damage Gain !B! Block. NL If your deck contains fewer Attacks, reduce damage by !M!. If your deck contains fewer Skills, reduce Block by !M!."
+  },
+  "theExplorer:FlowerPot": {
+    "NAME": "Flower Pot",
+    "DESCRIPTION": "At the start of your turn, add a random [#458B00]Plant[] to your hand.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add a random Upgraded [#458B00]Plant[] to your hand."
+  },
+  "theExplorer:FollowThrough": {
+    "NAME": "Follow Through",
+    "DESCRIPTION": "Whenever you spend energy on a card this turn, draw a card."
+  },
+  "theExplorer:ForestFire": {
+    "NAME": "Forest Fire",
+    "DESCRIPTION": "For each card played this turn, deal !D! damage to all enemies and shuffle a Burn into your draw pile.",
+    "EXTENDED_DESCRIPTION": [" (", " time)", " times)"]
+  },
+  "theExplorer:Fracture": {
+    "NAME": "Fracture",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy still has Block, deal !D! damage again."
+  },
+  "theExplorer:FrenziedAttack": {
+    "NAME": "Frenzied Attack",
+    "DESCRIPTION": "Deal !D! damage for each card in your hand.",
+    "EXTENDED_DESCRIPTION": [" (", " card)", " cards)"]
+  },
+  "theExplorer:HatToss": {
+    "NAME": "Hat Toss",
+    "DESCRIPTION": "Deal !D! damage to a random enemy. NL Then deal 2 less damage to another random enemy. Repeat until this would deal no damage."
+  },
+  "theExplorer:Headshot": {
+    "NAME": "Headshot",
+    "DESCRIPTION": "Deal !D! damage. If the enemy is being theexplorer:Researched, they lose 1 Strength."
+  },
+  "theExplorer:HedgehogCompanion": {
+    "NAME": "Hedgehog Companion",
+    "DESCRIPTION": "Startup. Fleeting. NL Replace your Companion with HEDGEHOG: Whenever you receive unblocked attack damage, gain 1/2/3 Thorns."
+  },
+  "theExplorer:Highlander": {
+    "NAME": "Highlander",
+    "DESCRIPTION": "Ethereal. theexplorer:Highlander. NL Deal X damage and gain X Block. NL (X is the number of cards in your deck)",
+    "UPGRADE_DESCRIPTION": "Innate. NL Ethereal. theexplorer:Highlander. NL Deal X damage and gain X Block. NL (X is the number of cards in your deck)"
+  },
+  "theExplorer:ImprovisedDefenses": {
+    "NAME": "Improvised Defenses",
+    "DESCRIPTION": "Whenever you play a 0 cost card, gain !M! Block."
+  },
+  "theExplorer:Initiative": {
+    "NAME": "Initiative",
+    "DESCRIPTION": "Deal !D! Damage. NL If this is the first card played this turn, draw a card."
+  },
+  "theExplorer:Insight": {
+    "NAME": "Insight",
+    "DESCRIPTION": "Gain !B! Block. Add a copy of the next card you play this turn to your hand. (Cannot copy another Insight)"
+  },
+  "theExplorer:Inspect": {
+    "NAME": "Inspect",
+    "DESCRIPTION": "Start theexplorer:Researching an enemy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Start theexplorer:Researching an enemy. NL Exhaust."
+  },
+  "theExplorer:InvigoratingBrew": {
+    "NAME": "Invigorating Brew",
+    "DESCRIPTION": "theexplorer:Concoct. Gain !B! Block. NL [#DC1515]Attack[]: Gain 1 Energy. NL [#22B21B]Skill[]: Gain 2 Dexterity until end of turn. NL [#2FD0E0]Power[]: Remove Stealth from all enemies."
+  },
+  "theExplorer:IvyTrap": {
+    "NAME": "Ivy Trap",
+    "DESCRIPTION": "The next time you receive unblocked attack damage, apply 10 Poison to the attacker.",
+    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, apply 10 Poison to the attacker."
+  },
+  "theExplorer:Leech": {
+    "NAME": "Leech",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, heal !M!. NL Exhaust."
+  },
+  "theExplorer:LuckyStrike": {
+    "NAME": "Lucky Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL If you draw an A, deal !D! damage again.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 2 cards. NL If you draw an Attack, deal !D! damage again."
+  },
+  "theExplorer:MedleyBrew": {
+    "NAME": "Medley Brew",
+    "DESCRIPTION": "theexplorer:Concoct X times. Exhaust. NL [#DC1515]Attack[]: Add a random Attack to your hand. It costs 0 this turn. NL [#22B21B]Skill[]: Add a random Skill to your hand. It costs 0 this turn. NL [#2FD0E0]Power[]: Add a random Power to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "theexplorer:Concoct X+1 times. Exhaust. NL [#DC1515]Attack[]: Add a random Attack to your hand. It costs 0 this turn. NL [#22B21B]Skill[]: Add a random Skill to your hand. It costs 0 this turn. NL [#2FD0E0]Power[]: Add a random Power to your hand. It costs 0 this turn."
+  },
+  "theExplorer:MoltenBrew": {
+    "NAME": "Molten Brew",
+    "DESCRIPTION": "theexplorer:Concoct. Deal !D! damage. NL [#DC1515]Attack[]: Deal !D! damage to all enemies instead. NL [#22B21B]Skill[]: Draw a card. NL [#2FD0E0]Power[]: Remove all Block from the enemy."
+  },
+  "theExplorer:MortalTorrent": {
+    "NAME": "Mortal Torrent",
+    "DESCRIPTION": "theexplorer:Unique. Ethereal. NL At the end of your turn, if your hand is full, play every card in your hand.",
+    "UPGRADE_DESCRIPTION": "theexplorer:Unique. NL At the end of your turn, if your hand is full, play every card in your hand."
+  },
+  "theExplorer:NutShot": {
+    "NAME": "Nut Shot",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 random [#458B00]Plant[] to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Add 2 random [#458B00]Plants[] to your hand."
+  },
+  "theExplorer:Outbreak": {
+    "NAME": "Outbreak",
+    "DESCRIPTION": "Apply !M! Poison to all enemies. NL Increase this by 1 each time you apply Poison to an enemy.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Poison to all enemies. NL Increase this by 2 each time you apply Poison to an enemy."
+  },
+  "theExplorer:Overload": {
+    "NAME": "Overload",
+    "DESCRIPTION": "Gain !B! Block. Apply 2 Frail to yourself."
+  },
+  "theExplorer:OwlCompanion": {
+    "NAME": "Owl Companion",
+    "DESCRIPTION": "Startup. Fleeting. NL Replace your Companion with OWL: At the start of your turn, draw 1/2/3 cards."
+  },
+  "theExplorer:Photosynthesis": {
+    "NAME": "Photosynthesis",
+    "DESCRIPTION": "Whenever you draw a [#458B00]Plant[], Upgrade it.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a [#458B00]Plant[], Upgrade it twice."
+  },
+  "theExplorer:PicnicBasket": {
+    "NAME": "Picnic Basket",
+    "DESCRIPTION": "Add 1 of each NL [#458B00]Plant[] to your hand.",
+    "UPGRADE_DESCRIPTION": "Add 1 of each NL Upgraded [#458B00]Plant[] to your hand."
+  },
+  "theExplorer:PiercingShot": {
+    "NAME": "Piercing Shot",
+    "DESCRIPTION": "Deal !D! Damage. NL If this deals unblocked damage, apply !M! Vulnerable."
+  },
+  "theExplorer:PitTrap": {
+    "NAME": "Pit Trap",
+    "DESCRIPTION": "The next time you receive unblocked attack damage, Stun the attacker for 1 turn.",
+    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, Stun the attacker for 1 turn."
+  },
+  "theExplorer:PocketSand": {
+    "NAME": "Pocket Sand",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak. NL Apply !M! Vulnerable."
+  },
+  "theExplorer:PulseShot": {
+    "NAME": "Pulse Shot",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Exhaust."
+  },
+  "theExplorer:QuestArcaneTech": {
+    "NAME": "Quest: Arcane Tech",
+    "DESCRIPTION": "theexplorer:Unique. NL Quest: Store 10 Energy. NL Reward: At the start of your turn, add a Pulse Shot to your hand.",
+    "UPGRADE_DESCRIPTION": "theexplorer:Unique. Innate. NL Quest: Store 10 Energy. NL Reward: At the start of your turn, add a Pulse Shot to your hand."
+  },
+  "theExplorer:QuestFontOfLife": {
+    "NAME": "Quest: Font Of Life",
+    "DESCRIPTION": "theexplorer:Unique. NL Quest: Play 5 cards that cost 2 or more. NL Reward: Gain 2 theexplorer:Energised.",
+    "UPGRADE_DESCRIPTION": "theexplorer:Unique. Innate. NL Quest: Play 5 cards that cost 2 or more. NL Reward: Gain 2 theexplorer:Energised."
+  },
+  "theExplorer:QuestRepairTower": {
+    "NAME": "Quest: Repair Tower",
+    "DESCRIPTION": "theexplorer:Unique. NL Quest: Gain 100 Block. NL Reward: Convert all unused Block into damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "theexplorer:Unique. Innate. NL Quest: Gain 100 Block. NL Reward: Convert all unused Block into damage to a random enemy."
+  },
+  "theExplorer:Rebound": {
+    "NAME": "Rebound",
+    "DESCRIPTION": "Deal !D! damage. If this Attack deals unblocked damage, gain 1 Energy."
+  },
+  "theExplorer:Regrowth": {
+    "NAME": "Regrowth",
+    "DESCRIPTION": "Add a random [#458B00]Plant[] to your hand. NL Then return all matching Exhausted [#458B00]Plants[] to your hand.",
+    "UPGRADE_DESCRIPTION": "Add a chosen [#458B00]Plant[] to your hand. NL Then return all matching Exhausted [#458B00]Plants[] to your hand."
+  },
+  "theExplorer:RockToss": {
+    "NAME": "Rock Toss",
+    "DESCRIPTION": "Deal !D! damage. Draw all Rock Toss cards from your draw pile."
+  },
+  "theExplorer:ScaledPlant": {
+    "NAME": "Scaled Plant",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+  },
+  "theExplorer:ShoulderBlow": {
+    "NAME": "Shoulder Blow",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle your discard pile into your draw pile. NL Draw a card."
+  },
+  "theExplorer:ShrapnelShot": {
+    "NAME": "Shrapnel Shot",
+    "DESCRIPTION": "Deal !D! Damage to ALL enemies."
+  },
+  "theExplorer:SpikyPlant": {
+    "NAME": "Spiky Plant",
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust."
+  },
+  "theExplorer:SpudGun": {
+    "NAME": "Spud Gun",
+    "DESCRIPTION": "Exhaust all [#458B00]Plants[] in hand. NL Deal !D! for each card Exhausted."
+  },
+  "theExplorer:Stockpile": {
+    "NAME": "Stockpile",
+    "DESCRIPTION": "Retain all cards in your hand.",
+    "UPGRADE_DESCRIPTION": "Retain all cards in your hand and Upgrade them."
+  },
+  "theExplorer:StrangeMushrooms": {
+    "NAME": "Strange Mushrooms",
+    "DESCRIPTION": "Draw !M! cards. NL Randomise their costs."
+  },
+  "theExplorer:StrategicPlanning": {
+    "NAME": "Strategic Planning",
+    "DESCRIPTION": "Gain Block equal to your Research Stacks."
+  },
+  "theExplorer:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "theExplorer:Stun": {
+    "NAME": "Stun",
+    "DESCRIPTION": "Stun an Enemy being theexplorer:Researched for 1 turn. NL Exhaust."
+  },
+  "theExplorer:SupplyDrop": {
+    "NAME": "Supply Drop",
+    "DESCRIPTION": "Draw cards until they cost a total of !M! Energy."
+  },
+  "theExplorer:SleepPowder": {
+    "NAME": "Sleep Powder",
+    "DESCRIPTION": "In 3 turns, Stun all enemies for 1 turn. NL Exhaust."
+  },
+  "theExplorer:TigerCompanion": {
+    "NAME": "Tiger Companion",
+    "DESCRIPTION": "Startup. Fleeting. NL Replace your Companion with TIGER: Every 3/2/1 times you shuffle your deck, gain 1 Strength."
+  },
+  "theExplorer:ToePoke": {
+    "NAME": "Toe Poke",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is being theexplorer:Researched, gain 1 [E] and draw 1 card."
+  },
+  "theExplorer:ToxicPlant": {
+    "NAME": "Toxic Plant",
+    "DESCRIPTION": "Apply !M! Poison. NL Exhaust."
+  },
+  "theExplorer:Tracking": {
+    "NAME": "Tracking",
+    "DESCRIPTION": "Gain 1 [E] for each enemy."
+  },
+  "theExplorer:Trip": {
+    "NAME": "Trip",
+    "DESCRIPTION": "Deal !D! damage. NL If the target is being theexplorer:Researched, apply !M! Weak."
+  },
+  "theExplorer:TripwireTrap": {
+    "NAME": "Tripwire Trap",
+    "DESCRIPTION": "The next time you receive unblocked attack damage, deal 20 damage to the attacker.",
+    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, deal 20 damage to the attacker."
+  },
+  "theExplorer:TurtleCompanion": {
+    "NAME": "Turtle Companion",
+    "DESCRIPTION": "Startup. Fleeting. NL Replace your companion with TURTLE: At the start of combat, gain 1/2/3 Artifact."
+  },
+  "theExplorer:VenomCoating": {
+    "NAME": "Venom Coating",
+    "DESCRIPTION": "For the next Attack you play this turn, replace any unblocked damage it would deal with Poison."
+  },
+  "theExplorer:WeakSpot": {
+    "NAME": "Weak Spot",
+    "DESCRIPTION": "Deal !D! Damage. NL If the enemy is being theexplorer:Researched, deal !D! Damage again."
+  },
+  "theExplorer:WildOutbreak": {
+    "NAME": "Wild Outbreak",
+    "DESCRIPTION": "Add X [#458B00]Plants[] to your hand and Upgrade them X times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X+1 [#458B00]Plants[] to your hand and Upgrade them X+1 times. NL Exhaust."
+  },
+  "theExplorer:WolfCompanion": {
+    "NAME": "Wolf Companion",
+    "DESCRIPTION": "Startup. Fleeting. NL Replace your companion with WOLFY: At the end of your turn, deal 4/6/8 damage to a random enemy being theexplorer:Researched."
+  }
+}

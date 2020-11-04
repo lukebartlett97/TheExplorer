@@ -1,0 +1,150 @@
+{
+        "theExplorer:CommonPower": {
+                "NAME": "Placeholder Power",
+                "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
+        },
+        "theExplorer:ResearchingPower": {
+                "NAME": "Researching",
+                "DESCRIPTIONS": ["Complete the research when this dies."]
+        },
+        "theExplorer:ResearchStacksPower": {
+                "NAME": "Research Stacks",
+                "DESCRIPTIONS": ["Total number of researches completed: #b", "."]
+        },
+        "theExplorer:BigBrainPower": {
+                "NAME": "Big brain",
+                "DESCRIPTIONS": ["At the start of your turn, spend #b", " research to gain #b", " Dexterity."]
+        },
+        "theExplorer:FlowerPotPower": {
+                "NAME": "Flower Pot",
+                "DESCRIPTIONS": ["At the start of your turn, add #b", " Plant(s) to your hand."]
+        },
+        "theExplorer:UpgradedFlowerPotPower": {
+                "NAME": "Flower Pot+",
+                "DESCRIPTIONS": ["At the start of your turn, add #b", " Upgraded Plant(s) to your hand."]
+        },
+        "theExplorer:ImprovisedDefensesPower": {
+                "NAME": "Improvised Defenses",
+                "DESCRIPTIONS": ["Whenever you play a 0 cost card, gain #b", " Block."]
+        },
+        "theExplorer:StunnedPower": {
+                "NAME": "Stunned",
+                "DESCRIPTIONS": ["Stunned for the next #b", " turn(s)."]
+        },
+        "theExplorer:IvyTrapPower": {
+                "NAME": "Ivy Trap",
+                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, apply 10 poison to the attacker."]
+        },
+        "theExplorer:PitTrapPower": {
+                "NAME": "Pit Trap",
+                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, stun the attacker."]
+        },
+        "theExplorer:TripwireTrapPower": {
+                "NAME": "Tripwire Trap",
+                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, deal 20 damage to the attacker."]
+        },
+        "theExplorer:UpgradedIvyTrapPower": {
+                "NAME": "Upgraded Ivy Trap",
+                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, apply 10 poison to the attacker."]
+        },
+        "theExplorer:UpgradedPitTrapPower": {
+                "NAME": "Upgraded Pit Trap",
+                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, stun the attacker."]
+        },
+        "theExplorer:UpgradedTripwireTrapPower": {
+                "NAME": "Upgraded Tripwire Trap",
+                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, deal 20 damage to the attacker."]
+        },
+        "theExplorer:DoubleUpPower": {
+                "NAME": "Double Up",
+                "DESCRIPTIONS": ["Your next #b", " 0-cost card(s) are played twice."]
+        },
+        "theExplorer:VenomCoatingPower": {
+                "NAME": "Venom Coating",
+                "DESCRIPTIONS": ["Your next #b", " attack(s) deal unblocked damage as poison."]
+        },
+        "theExplorer:VenomPower": {
+                "NAME": "Venom",
+                "DESCRIPTIONS": ["Randomise the cost of the next #b", " card(s) you draw."]
+        },
+        "theExplorer:PhotosynthesisPower": {
+                "NAME": "Photosynthesis",
+                "DESCRIPTIONS": ["Whenever you draw a Plant, upgrade it #b", " time(s)."]
+        },
+        "theExplorer:QuestFontOfLifePower": {
+                "NAME": "Quest: Font Of Life",
+                "DESCRIPTIONS": ["Play #b", " cards that cost 2 or more to claim your reward."]
+        },
+        "theExplorer:QuestArcaneTechPower": {
+                "NAME": "Quest: Arcane Tech",
+                "DESCRIPTIONS": ["Store #b", " energy to claim your reward."]
+        },
+        "theExplorer:PulseShotPower": {
+                "NAME": "Pulse Shot",
+                "DESCRIPTIONS": ["At the start of your turn add #b", " Pulse Shot to your hand."]
+        },
+        "theExplorer:EnergisedPower": {
+                "NAME": "Energised",
+                "DESCRIPTIONS": ["At the start of your turn, gain #b", " [E] ."]
+        },
+        "theExplorer:QuestRepairTowerPower": {
+                "NAME": "Quest: Repair Tower",
+                "DESCRIPTIONS": ["Gain #b", " block to claim your reward."]
+        },
+        "theExplorer:ConvertedBlockPower": {
+                "NAME": "Converted Block",
+                "DESCRIPTIONS": ["Convert unused Block into damage to a random enemy."]
+        },
+        "theExplorer:UnboxingPower": {
+                "NAME": "Unboxing",
+                "DESCRIPTIONS": ["When this monster dies, summon new enemies to fight. Transfer over all Strength"]
+        },
+        "theExplorer:MortalTorrentPower": {
+                "NAME": "Mortal Torrent",
+                "DESCRIPTIONS": ["At the end of your turn, if your hand is full, play every card in your hand."]
+        },
+        "theExplorer:FollowThroughPower": {
+                "NAME": "Follow Through",
+                "DESCRIPTIONS": ["Whenever you spend energy on a card this turn, draw #b", " card(s)."]
+        },
+        "theExplorer:InsightPower": {
+                "NAME": "Insight",
+                "DESCRIPTIONS": ["Add a copy of the next #b", " card(s) you play to your hand."]
+        },
+        "theExplorer:WolfCompanionPower": {
+                "NAME": "Wolfy",
+                "DESCRIPTIONS": ["At the end of your turn, deal #b", " damage to a random enemy being researched."]
+        },
+        "theExplorer:TurtleCompanionPower": {
+                "NAME": "Turtle",
+                "DESCRIPTIONS": ["At the start of combat, gain #b", " Artifact."]
+        },
+        "theExplorer:OwlCompanionPower": {
+                "NAME": "Owl",
+                "DESCRIPTIONS": ["At the start of your turn, draw #b", " card(s)."]
+        },
+        "theExplorer:HedgehogCompanionPower": {
+                "NAME": "Hedgehog",
+                "DESCRIPTIONS": ["Whenever you receive unblocked attack damage, gain #b", " Thorns."]
+        },
+        "theExplorer:TigerCompanionPower": {
+                "NAME": "Tiger",
+                "DESCRIPTIONS": ["Every #b", " times you shuffle your deck, gain #b", " Strength."]
+        },
+        "theExplorer:NoShufflePower": {
+                "NAME": "No Shuffle",
+                "DESCRIPTIONS": ["After shuffling your deck, you cannot draw cards this turn."]
+        },
+        "theExplorer:ContagionPower": {
+                "NAME": "Contagion",
+                "DESCRIPTIONS": ["Whenever you apply poison to an enemy, apply it to all enemies instead."]
+        },
+        "theExplorer:ExhilaratePower": {
+                "NAME": "Exhilarate",
+                "DESCRIPTIONS": ["At the end of your turn, lose #b", " Strength"]
+        },
+        "theExplorer:SleepPower": {
+                "NAME": "Sleep",
+                "DESCRIPTIONS": ["In #b", " turn(s), Stun for #b", " turn(s)."]
+        }
+}
