@@ -518,7 +518,7 @@ public class ExplorerMod implements
         BaseMod.addCard(new SleepPowder());
         BaseMod.addCard(new Tracking());
         BaseMod.addCard(new VenomCoating());
-        BaseMod.addCard(new WildOutbreak());
+        BaseMod.addCard(new WildGrowth());
 
         //Powers
         BaseMod.addCard(new BigBrainForm());
@@ -604,7 +604,7 @@ public class ExplorerMod implements
         UnlockTracker.unlockCard(SleepPowder.ID);
         UnlockTracker.unlockCard(Tracking.ID);
         UnlockTracker.unlockCard(VenomCoating.ID);
-        UnlockTracker.unlockCard(WildOutbreak.ID);
+        UnlockTracker.unlockCard(WildGrowth.ID);
 
         //Powers
         UnlockTracker.unlockCard(BigBrainForm.ID);

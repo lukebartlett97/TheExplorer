@@ -36,7 +36,7 @@ public class Headshot extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     //TODO: Add real art.
-    public static final String IMG = makeCardPath("Atk_Beta.png");
+    public static final String IMG = makeCardPath("Headshot.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

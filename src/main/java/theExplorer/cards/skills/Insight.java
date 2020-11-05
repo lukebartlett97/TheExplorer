@@ -19,7 +19,7 @@ public class Insight extends AbstractDynamicCard {
     // TEXT DECLARATION
 
     public static final String ID = ExplorerMod.makeID(Insight.class.getSimpleName());
-    public static final String IMG = makeCardPath("Ski_Beta.png");
+    public static final String IMG = makeCardPath("Insight.png");
 
     // /TEXT DECLARATION/
 

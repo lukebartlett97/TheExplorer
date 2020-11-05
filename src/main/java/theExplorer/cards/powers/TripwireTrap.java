@@ -41,6 +41,7 @@ public class TripwireTrap extends CustomCard {
     public static final CardColor COLOR = TheExplorer.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
+    private static final int DAMAGE = 15;
 
     // /STAT DECLARATION/
 
@@ -48,16 +49,16 @@ public class TripwireTrap extends CustomCard {
     public TripwireTrap() {
 
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-
+        baseMagicNumber = magicNumber = DAMAGE;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (upgraded) {
-            addToBot(new ApplyPowerAction(p, p, new UpgradedTripwireTrapPower(p, p, 1), 1));
+            addToBot(new ApplyPowerAction(p, p, new UpgradedTripwireTrapPower(p, p, 1, magicNumber), 1));
         } else {
-            addToBot(new ApplyPowerAction(p, p, new TripwireTrapPower(p, p, 1), 1));
+            addToBot(new ApplyPowerAction(p, p, new TripwireTrapPower(p, p, 1, magicNumber), 1));
         }
 
     }

@@ -40,6 +40,7 @@ public class IvyTrap extends CustomCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = TheExplorer.Enums.COLOR_GRAY;
     private static final int COST = 1;
+    private static final int POISON = 10;
 
     // /STAT DECLARATION/
 
@@ -47,16 +48,16 @@ public class IvyTrap extends CustomCard {
     public IvyTrap() {
 
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-
+        baseMagicNumber = magicNumber = POISON;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (upgraded) {
-            addToBot(new ApplyPowerAction(p, p, new UpgradedIvyTrapPower(p, p, 1), 1));
+            addToBot(new ApplyPowerAction(p, p, new UpgradedIvyTrapPower(p, p, 1, magicNumber), 1));
         } else {
-            addToBot(new ApplyPowerAction(p, p, new IvyTrapPower(p, p, 1), 1));
+            addToBot(new ApplyPowerAction(p, p, new IvyTrapPower(p, p, 1, magicNumber), 1));
         }
 
     }

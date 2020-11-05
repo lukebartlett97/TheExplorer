@@ -5,8 +5,8 @@
   },
   "theExplorer:Battery": {
     "NAME": "Battery",
-    "DESCRIPTION": "Purge. Ethereal. NL Store X Energy.",
-    "UPGRADE_DESCRIPTION": "Purge. Ethereal. NL Store X+1 Energy."
+    "DESCRIPTION": "Purge. Ethereal. NL Store X [E].",
+    "UPGRADE_DESCRIPTION": "Purge. Ethereal. NL Store X+1 [E]."
   },
   "theExplorer:BigBrainForm": {
     "NAME": "Big Brain Form",
@@ -40,8 +40,7 @@
   },
   "theExplorer:CalmingRest": {
     "NAME": "Calming Rest",
-    "DESCRIPTION": "Gain !B! Block for each time your companion has used its ability this combat.",
-    "EXTENDED_DESCRIPTION": [" (", " time)", " times)"]
+    "DESCRIPTION": "Gain !B! Block. NL Increase this by !M! for each time your theexplorer:Companion has used its ability this combat."
   },
   "theExplorer:Camouflage": {
     "NAME": "Camouflage",
@@ -53,7 +52,7 @@
   },
   "theExplorer:Command": {
     "NAME": "Command",
-    "DESCRIPTION": "Deal !D! damage. Trigger your theexplorer:Companion's ability."
+    "DESCRIPTION": "Deal !D! damage. NL Trigger your theexplorer:Companion's ability."
   },
   "theExplorer:Contagion": {
     "NAME": "Contagion",
@@ -61,7 +60,7 @@
   },
   "theExplorer:CorruptedBlade": {
     "NAME": "Corrupted Blade",
-    "DESCRIPTION": "Deal !D! damage. If this deals unblocked damage, apply !M! Poison."
+    "DESCRIPTION": "Deal !D! damage. NL If this deals unblocked damage, apply !M! Poison."
   },
   "theExplorer:Decoy": {
     "NAME": "Decoy",
@@ -104,7 +103,7 @@
   },
   "theExplorer:FollowThrough": {
     "NAME": "Follow Through",
-    "DESCRIPTION": "Whenever you spend energy on a card this turn, draw a card."
+    "DESCRIPTION": "Whenever you spend Energy on a card this turn, draw a card."
   },
   "theExplorer:ForestFire": {
     "NAME": "Forest Fire",
@@ -126,11 +125,11 @@
   },
   "theExplorer:Headshot": {
     "NAME": "Headshot",
-    "DESCRIPTION": "Deal !D! damage. If the enemy is being theexplorer:Researched, they lose 1 Strength."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is being theexplorer:Researched, they lose 1 Strength."
   },
   "theExplorer:HedgehogCompanion": {
     "NAME": "Hedgehog Companion",
-    "DESCRIPTION": "Startup. Fleeting. NL Replace your Companion with HEDGEHOG: Whenever you receive unblocked attack damage, gain 1/2/3 Thorns."
+    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Hedgehog. NL Remove this card from your deck."
   },
   "theExplorer:Highlander": {
     "NAME": "Highlander",
@@ -147,7 +146,7 @@
   },
   "theExplorer:Insight": {
     "NAME": "Insight",
-    "DESCRIPTION": "Gain !B! Block. Add a copy of the next card you play this turn to your hand. (Cannot copy another Insight)"
+    "DESCRIPTION": "Gain !B! Block. NL Add a copy of the next card you play this turn to your hand. (Cannot copy another Insight)"
   },
   "theExplorer:Inspect": {
     "NAME": "Inspect",
@@ -156,12 +155,12 @@
   },
   "theExplorer:InvigoratingBrew": {
     "NAME": "Invigorating Brew",
-    "DESCRIPTION": "theexplorer:Concoct. Gain !B! Block. NL [#DC1515]Attack[]: Gain 1 Energy. NL [#22B21B]Skill[]: Gain 2 Dexterity until end of turn. NL [#2FD0E0]Power[]: Remove Stealth from all enemies."
+    "DESCRIPTION": "Gain !B! Block. theexplorer:Concoct. NL [#DC1515]Attack[]: Gain 1 [E]. NL [#22B21B]Skill[]: Gain 2 Dexterity until end of turn. NL [#2FD0E0]Power[]: Remove Stealth from all enemies."
   },
   "theExplorer:IvyTrap": {
     "NAME": "Ivy Trap",
-    "DESCRIPTION": "The next time you receive unblocked attack damage, apply 10 Poison to the attacker.",
-    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, apply 10 Poison to the attacker."
+    "DESCRIPTION": "The next time you receive unblocked attack damage, apply !M! Poison to the attacker.",
+    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, apply !M! Poison to the attacker."
   },
   "theExplorer:Leech": {
     "NAME": "Leech",
@@ -169,7 +168,7 @@
   },
   "theExplorer:LuckyStrike": {
     "NAME": "Lucky Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL If you draw an A, deal !D! damage again.",
+    "DESCRIPTION": "Deal !D! damage. NL Draw a card. NL If you draw an Attack, deal !D! damage again.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 2 cards. NL If you draw an Attack, deal !D! damage again."
   },
   "theExplorer:MedleyBrew": {
@@ -179,7 +178,7 @@
   },
   "theExplorer:MoltenBrew": {
     "NAME": "Molten Brew",
-    "DESCRIPTION": "theexplorer:Concoct. Deal !D! damage. NL [#DC1515]Attack[]: Deal !D! damage to all enemies instead. NL [#22B21B]Skill[]: Draw a card. NL [#2FD0E0]Power[]: Remove all Block from the enemy."
+    "DESCRIPTION": "Deal !D! damage. theexplorer:Concoct. NL [#DC1515]Attack[]: Deal !D! damage to all enemies instead. NL [#22B21B]Skill[]: Draw a card. NL [#2FD0E0]Power[]: Remove all Block from the enemy."
   },
   "theExplorer:MortalTorrent": {
     "NAME": "Mortal Torrent",
@@ -202,7 +201,7 @@
   },
   "theExplorer:OwlCompanion": {
     "NAME": "Owl Companion",
-    "DESCRIPTION": "Startup. Fleeting. NL Replace your Companion with OWL: At the start of your turn, draw 1/2/3 cards."
+    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Owl. NL Remove this card from your deck."
   },
   "theExplorer:Photosynthesis": {
     "NAME": "Photosynthesis",
@@ -233,8 +232,8 @@
   },
   "theExplorer:QuestArcaneTech": {
     "NAME": "Quest: Arcane Tech",
-    "DESCRIPTION": "theexplorer:Unique. NL Quest: Store 10 Energy. NL Reward: At the start of your turn, add a Pulse Shot to your hand.",
-    "UPGRADE_DESCRIPTION": "theexplorer:Unique. Innate. NL Quest: Store 10 Energy. NL Reward: At the start of your turn, add a Pulse Shot to your hand."
+    "DESCRIPTION": "theexplorer:Unique. NL Quest: Store 10 [E]. NL Reward: At the start of your turn, add a Pulse Shot to your hand.",
+    "UPGRADE_DESCRIPTION": "theexplorer:Unique. Innate. NL Quest: Store 10 [E]. NL Reward: At the start of your turn, add a Pulse Shot to your hand."
   },
   "theExplorer:QuestFontOfLife": {
     "NAME": "Quest: Font Of Life",
@@ -248,7 +247,7 @@
   },
   "theExplorer:Rebound": {
     "NAME": "Rebound",
-    "DESCRIPTION": "Deal !D! damage. If this Attack deals unblocked damage, gain 1 Energy."
+    "DESCRIPTION": "Deal !D! damage. If this Attack deals unblocked damage, gain 1 [E]."
   },
   "theExplorer:Regrowth": {
     "NAME": "Regrowth",
@@ -290,7 +289,8 @@
   },
   "theExplorer:StrategicPlanning": {
     "NAME": "Strategic Planning",
-    "DESCRIPTION": "Gain Block equal to your Research Stacks."
+    "DESCRIPTION": "Gain Block equal to your Research Stacks.",
+    "EXTENDED_DESCRIPTION": [" (", ")"]
   },
   "theExplorer:Strike": {
     "NAME": "Strike",
@@ -302,7 +302,7 @@
   },
   "theExplorer:SupplyDrop": {
     "NAME": "Supply Drop",
-    "DESCRIPTION": "Draw cards until they cost a total of !M! Energy."
+    "DESCRIPTION": "Draw cards until they cost a total of !M! [E]."
   },
   "theExplorer:SleepPowder": {
     "NAME": "Sleep Powder",
@@ -310,7 +310,7 @@
   },
   "theExplorer:TigerCompanion": {
     "NAME": "Tiger Companion",
-    "DESCRIPTION": "Startup. Fleeting. NL Replace your Companion with TIGER: Every 3/2/1 times you shuffle your deck, gain 1 Strength."
+    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Tiger. NL Remove this card from your deck."
   },
   "theExplorer:ToePoke": {
     "NAME": "Toe Poke",
@@ -330,12 +330,12 @@
   },
   "theExplorer:TripwireTrap": {
     "NAME": "Tripwire Trap",
-    "DESCRIPTION": "The next time you receive unblocked attack damage, deal 20 damage to the attacker.",
-    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, deal 20 damage to the attacker."
+    "DESCRIPTION": "The next time you receive unblocked attack damage, deal !M! damage to the attacker.",
+    "UPGRADE_DESCRIPTION": "The next time you receive attack damage, deal !M! damage to the attacker."
   },
   "theExplorer:TurtleCompanion": {
     "NAME": "Turtle Companion",
-    "DESCRIPTION": "Startup. Fleeting. NL Replace your companion with TURTLE: At the start of combat, gain 1/2/3 Artifact."
+    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Turtle. NL Remove this card from your deck."
   },
   "theExplorer:VenomCoating": {
     "NAME": "Venom Coating",
@@ -345,13 +345,13 @@
     "NAME": "Weak Spot",
     "DESCRIPTION": "Deal !D! Damage. NL If the enemy is being theexplorer:Researched, deal !D! Damage again."
   },
-  "theExplorer:WildOutbreak": {
-    "NAME": "Wild Outbreak",
+  "theExplorer:WildGrowth": {
+    "NAME": "Wild Growth",
     "DESCRIPTION": "Add X [#458B00]Plants[] to your hand and Upgrade them X times. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Add X+1 [#458B00]Plants[] to your hand and Upgrade them X+1 times. NL Exhaust."
   },
   "theExplorer:WolfCompanion": {
     "NAME": "Wolf Companion",
-    "DESCRIPTION": "Startup. Fleeting. NL Replace your companion with WOLFY: At the end of your turn, deal 4/6/8 damage to a random enemy being theexplorer:Researched."
+    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Wolfy. NL Remove this card from your deck."
   }
 }

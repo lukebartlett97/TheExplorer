@@ -33,7 +33,7 @@
         },
         "theExplorer:IvyTrapPower": {
                 "NAME": "Ivy Trap",
-                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, apply 10 poison to the attacker."]
+                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, apply #b", " poison to the attacker."]
         },
         "theExplorer:PitTrapPower": {
                 "NAME": "Pit Trap",
@@ -41,11 +41,11 @@
         },
         "theExplorer:TripwireTrapPower": {
                 "NAME": "Tripwire Trap",
-                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, deal 20 damage to the attacker."]
+                "DESCRIPTIONS": ["The next #b", " time(s) you take damage from an attack, deal #b", " damage to the attacker."]
         },
         "theExplorer:UpgradedIvyTrapPower": {
                 "NAME": "Upgraded Ivy Trap",
-                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, apply 10 poison to the attacker."]
+                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, apply #b", " poison to the attacker."]
         },
         "theExplorer:UpgradedPitTrapPower": {
                 "NAME": "Upgraded Pit Trap",
@@ -53,7 +53,7 @@
         },
         "theExplorer:UpgradedTripwireTrapPower": {
                 "NAME": "Upgraded Tripwire Trap",
-                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, deal 20 damage to the attacker."]
+                "DESCRIPTIONS": ["The next #b", " time(s) you are attacked, deal #b", " damage to the attacker."]
         },
         "theExplorer:DoubleUpPower": {
                 "NAME": "Double Up",

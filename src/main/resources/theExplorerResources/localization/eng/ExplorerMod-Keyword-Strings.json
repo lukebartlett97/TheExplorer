@@ -79,6 +79,46 @@
     "DESCRIPTION": "Only playable if every card in your deck in unique."
   },
   {
+    "PROPER_NAME": "OWL",
+    "NAMES": [
+      "owl",
+      "Owl"
+    ],
+    "DESCRIPTION": "At the start of your turn, draw 1/2/3 cards."
+  },
+  {
+    "PROPER_NAME": "WOLFY",
+    "NAMES": [
+      "wolfy",
+      "Wolfy"
+    ],
+    "DESCRIPTION": "At the end of your turn, deal 4/6/8 damage to a random enemy being theexplorer:Researched."
+  },
+  {
+    "PROPER_NAME": "TIGER",
+    "NAMES": [
+      "tiger",
+      "Tiger"
+    ],
+    "DESCRIPTION": "Every 3/2/1 times you shuffle your deck, gain 1 Strength."
+  },
+  {
+    "PROPER_NAME": "HEDGEHOG",
+    "NAMES": [
+      "hedgehog",
+      "Hedgehog"
+    ],
+    "DESCRIPTION": "Whenever you receive unblocked attack damage, gain 1/2/3 Thorns."
+  },
+  {
+    "PROPER_NAME": "TURTLE",
+    "NAMES": [
+      "turtle",
+      "Turtle"
+    ],
+    "DESCRIPTION": "At the start of combat, gain 1/2/3 Artifact."
+  },
+  {
     "PROPER_NAME": "Multiword Keyword",
     "NAMES": [
       "Multiword Keyword",

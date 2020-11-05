@@ -4,11 +4,14 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 import theExplorer.powers.ResearchStacksPower;
+import theExplorer.util.CompanionService;
+import theExplorer.util.ResearchingService;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -71,6 +74,11 @@ public class StrategicPlanning extends CustomCard {
         }
     }
 
+    @Override
+    public void applyPowers() {
+        initializeDescription();
+    }
+
     // Upgraded stats.
     @Override
     public void upgrade() {
@@ -79,5 +87,15 @@ public class StrategicPlanning extends CustomCard {
             upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
+    }
+
+    @Override
+    public void initializeDescription() {
+        this.rawDescription = cardStrings.DESCRIPTION;
+        if(AbstractDungeon.isPlayerInDungeon()) {
+            int stacks = ResearchingService.getAmount();
+            this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0] + stacks + cardStrings.EXTENDED_DESCRIPTION[1];
+        }
+        super.initializeDescription();
     }
 }

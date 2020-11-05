@@ -61,6 +61,8 @@ public class SleepPowder extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         // Aside from baseDamage/MagicNumber/Block there's also a few more.
         // Just type this.base and let intelliJ auto complete for you, or, go read up AbstractCard
+
+        this.exhaust = true;
     }
 
     // Actions the card should do.

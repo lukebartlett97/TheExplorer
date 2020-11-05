@@ -40,8 +40,9 @@ public class CalmingRest extends CustomCard {
     public static final CardColor COLOR = TheExplorer.Enums.COLOR_GRAY;
 
     private static final int COST = 1;
-    private static final int BLOCK = 3;
-    private static final int UPGRADE_PLUS_BLOCK = 1;
+    private static final int BLOCK = 4;
+    private static final int GAIN = 2;
+    private static final int UPGRADE_PLUS_GAIN = 1;
 
 
     // /STAT DECLARATION/
@@ -50,16 +51,13 @@ public class CalmingRest extends CustomCard {
     public CalmingRest() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
+        baseMagicNumber = magicNumber = GAIN;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(CompanionService.getCompanionPower() != null) {
-            for(int i = 0; i < CompanionService.getCompanionPower().getTimesActed(); i++) {
-                addToBot(new GainBlockAction(p, p, block));
-            }
-        }
+        addToBot(new GainBlockAction(p, p, block));
     }
 
     //Upgraded stats.
@@ -67,7 +65,7 @@ public class CalmingRest extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
+            upgradeMagicNumber(UPGRADE_PLUS_GAIN);
             initializeDescription();
         }
     }
@@ -75,22 +73,15 @@ public class CalmingRest extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-
-        initializeDescription();
-    }
-
-    @Override
-    public void initializeDescription() {
-        this.rawDescription = cardStrings.DESCRIPTION;
-        if(CompanionService.getCompanionPower() != null) {
-            int count = CompanionService.getCompanionPower().getTimesActed();
-            this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0] + count;
-            if (count == 1) {
-                this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[1];
-            } else {
-                this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[2];
+        if (CompanionService.getCompanionPower() != null) {
+            int timesActed = CompanionService.getCompanionPower().getTimesActed();
+            if(timesActed > 0) {
+                this.block += timesActed * magicNumber;
+                if(this.block != this.baseBlock) {
+                    this.isBlockModified = true;
+                }
             }
         }
-        super.initializeDescription();
+        initializeDescription();
     }
 }

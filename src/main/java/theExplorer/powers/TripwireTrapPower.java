@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import theExplorer.ExplorerMod;
+import theExplorer.cards.powers.TripwireTrap;
 import theExplorer.util.TextureLoader;
 
 public class TripwireTrapPower extends ExplorerPower {
@@ -23,7 +24,9 @@ public class TripwireTrapPower extends ExplorerPower {
     private static final Texture tex84 = TextureLoader.getTexture("theExplorerResources/images/powers/placeholder_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theExplorerResources/images/powers/placeholder_power32.png");
 
-    public TripwireTrapPower(final AbstractCreature owner, final AbstractCreature source, int amount) {
+    private int damage;
+
+    public TripwireTrapPower(final AbstractCreature owner, final AbstractCreature source, int amount, int damage) {
         name = NAME;
         ID = POWER_ID;
         setDescriptions(DESCRIPTIONS);
@@ -39,18 +42,24 @@ public class TripwireTrapPower extends ExplorerPower {
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
+        this.damage = damage;
         updateDescription();
     }
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner != null && info.type == DamageInfo.DamageType.NORMAL && amount > 0) {
-            this.addToBot(new DamageAction(info.owner, new DamageInfo(owner, 20)));
+            this.addToBot(new DamageAction(info.owner, new DamageInfo(owner, damage)));
             amount -= 1;
             if (amount == 0) {
                 this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
             }
         }
         return damageAmount;
+    }
+
+    @Override
+    public void updateDescription() {
+        this.description = descriptions[0] + this.amount + descriptions[1] + this.damage + descriptions[2];
     }
 }

@@ -80,6 +80,7 @@ public class SleepPower extends ExplorerPower {
         updateTextures();
         this.flash();
         updateParticles();
+        updateDescription();
     }
 
     @Override

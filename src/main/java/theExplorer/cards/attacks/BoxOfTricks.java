@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
@@ -81,18 +82,18 @@ public class BoxOfTricks extends CustomCard {
     }
 
     @Override
-    public void triggerOnOtherCardPlayed(AbstractCard cardPlayed) {
-        if (!typesPlayed.contains(cardPlayed.type)) {
-            typesPlayed.add(cardPlayed.type);
-            if (costForTurn > 0) {
-                costForTurn -= 1;
+    public void applyPowers() {
+        for(AbstractCard cardPlayed : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
+            if (!typesPlayed.contains(cardPlayed.type)) {
+                typesPlayed.add(cardPlayed.type);
+                setCostForTurn(costForTurn-1);
             }
         }
+        super.applyPowers();
     }
 
     @Override
-    public void triggerOnEndOfPlayerTurn() {
+    public void atTurnStart() {
         this.typesPlayed.clear();
-        super.triggerOnEndOfPlayerTurn();
     }
 }

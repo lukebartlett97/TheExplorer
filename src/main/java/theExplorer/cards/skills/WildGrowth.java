@@ -17,15 +17,15 @@ import java.util.ArrayList;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 
-public class WildOutbreak extends CustomCard {
+public class WildGrowth extends CustomCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = ExplorerMod.makeID(WildOutbreak.class.getSimpleName());
+    public static final String ID = ExplorerMod.makeID(WildGrowth.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     //TODO: Add real art.
-    public static final String IMG = makeCardPath("Ski_Beta.png");
+    public static final String IMG = makeCardPath("WildGrowth.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -50,7 +50,7 @@ public class WildOutbreak extends CustomCard {
 
     // /STAT DECLARATION/
 
-    public WildOutbreak() {
+    public WildGrowth() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
         this.cardsToPreview = PlantService.getRandomPlant(false);

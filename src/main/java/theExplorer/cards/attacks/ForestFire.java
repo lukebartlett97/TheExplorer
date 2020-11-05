@@ -29,7 +29,7 @@ public class ForestFire extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     //TODO: Add real art.
-    public static final String IMG = makeCardPath("Atk_Beta.png");
+    public static final String IMG = makeCardPath("ForestFire.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -40,12 +40,13 @@ public class ForestFire extends CustomCard {
     public static final CardColor COLOR = TheExplorer.Enums.COLOR_GRAY;
 
     private static final int COST = 2;
-    private static final int DAMAGE = 18;
+    private static final int DAMAGE = 11;
     private static final int UPGRADE_DAMAGE = 5;
 
     public ForestFire() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
 
+        isMultiDamage = true;
         damage = baseDamage = DAMAGE;
     }
 
