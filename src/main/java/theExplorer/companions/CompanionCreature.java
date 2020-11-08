@@ -12,8 +12,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.MonsterRoom;
-import com.megacrit.cardcrawl.vfx.SpeechBubble;
-import theExplorer.ExplorerMod;
 
 public class CompanionCreature extends AbstractCreature {
     private Texture img;
@@ -22,7 +20,7 @@ public class CompanionCreature extends AbstractCreature {
     public CompanionCreature(Texture img, String actMessage) {
         this.img = img;
         this.actMessage = actMessage;
-        this.drawX = (float)Settings.WIDTH * 0.35F;
+        this.drawX = (float) Settings.WIDTH * 0.35F;
         this.drawY = AbstractDungeon.floorY;
         this.isPlayer = false;
         this.hb_h = 100 * Settings.scale;
@@ -71,7 +69,7 @@ public class CompanionCreature extends AbstractCreature {
             sb.begin();
         } else {
             sb.setColor(Color.WHITE);
-            sb.draw(this.img, this.drawX - (float)this.img.getWidth() * Settings.scale / 2.0F + this.animX, this.drawY, (float)this.img.getWidth() * Settings.scale, (float)this.img.getHeight() * Settings.scale, 0, 0, this.img.getWidth(), this.img.getHeight(), this.flipHorizontal, this.flipVertical);
+            sb.draw(this.img, this.drawX - (float) this.img.getWidth() * Settings.scale / 2.0F + this.animX, this.drawY, (float) this.img.getWidth() * Settings.scale, (float) this.img.getHeight() * Settings.scale, 0, 0, this.img.getWidth(), this.img.getHeight(), this.flipHorizontal, this.flipVertical);
         }
         this.hb.render(sb);
     }

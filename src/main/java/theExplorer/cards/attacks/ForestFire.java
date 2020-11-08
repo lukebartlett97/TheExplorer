@@ -3,10 +3,8 @@ package theExplorer.cards.attacks;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,7 +12,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
-import theExplorer.actions.LeechAction;
 import theExplorer.characters.TheExplorer;
 
 import java.util.ArrayList;
@@ -54,7 +51,7 @@ public class ForestFire extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         ArrayList<AbstractCard> cardsPlayed = AbstractDungeon.actionManager.cardsPlayedThisTurn;
         int amount = cardsPlayed.get(cardsPlayed.size() - 1).uuid.equals(this.uuid) ? cardsPlayed.size() - 1 : cardsPlayed.size();
-        for(int i = 0; i < amount; i++) {
+        for (int i = 0; i < amount; i++) {
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
             addToBot(new MakeTempCardInDrawPileAction(new Burn(), 1, true, true));
         }
@@ -78,7 +75,7 @@ public class ForestFire extends CustomCard {
     @Override
     public void initializeDescription() {
         this.rawDescription = cardStrings.DESCRIPTION;
-        if(AbstractDungeon.actionManager != null &&
+        if (AbstractDungeon.actionManager != null &&
                 AbstractDungeon.actionManager.cardsPlayedThisTurn != null &&
                 AbstractDungeon.getCurrMapNode() != null &&
                 AbstractDungeon.getCurrRoom() != null) {

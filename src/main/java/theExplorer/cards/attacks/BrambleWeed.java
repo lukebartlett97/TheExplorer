@@ -11,9 +11,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.UnblockedAction;
-import theExplorer.util.UnblockedEventListener;
 import theExplorer.characters.TheExplorer;
 import theExplorer.util.PlantService;
+import theExplorer.util.UnblockedEventListener;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -70,9 +70,8 @@ public class BrambleWeed extends CustomCard implements UnblockedEventListener {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        for(AbstractMonster monster : AbstractDungeon.getMonsters().monsters)
-        {
-            if(!monster.isDeadOrEscaped()) {
+        for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+            if (!monster.isDeadOrEscaped()) {
                 addToBot(new UnblockedAction(p, monster, this));
             }
         }

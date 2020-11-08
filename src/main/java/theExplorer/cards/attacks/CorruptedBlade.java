@@ -7,15 +7,13 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.UnblockedAction;
-import theExplorer.util.UnblockedEventListener;
 import theExplorer.characters.TheExplorer;
+import theExplorer.util.UnblockedEventListener;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"

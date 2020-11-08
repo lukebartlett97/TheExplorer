@@ -33,7 +33,7 @@ import theExplorer.cards.skills.Inspect;
 import theExplorer.powers.CompanionPower;
 import theExplorer.powers.ResearchStacksPower;
 import theExplorer.powers.WolfCompanionPower;
-import theExplorer.relics.*;
+import theExplorer.relics.Journal;
 import theExplorer.util.CompanionService;
 
 import java.util.ArrayList;
@@ -302,7 +302,7 @@ public class TheExplorer extends CustomPlayer {
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this, this, researchStacksPower));
-        if(companion != null) {
+        if (companion != null) {
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this, this, companion));
         }
 
@@ -330,7 +330,7 @@ public class TheExplorer extends CustomPlayer {
     public void render(SpriteBatch sb) {
         super.render(sb);
         CompanionPower companionPower = CompanionService.getCompanionPower();
-        if(companionPower != null) {
+        if (companionPower != null) {
             companionPower.getCompanion().render(sb);
         }
 
