@@ -3,6 +3,8 @@ package theExplorer.cards.skills;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.cards.AbstractDynamicCard;
@@ -18,6 +20,8 @@ public class Insight extends AbstractDynamicCard {
 
     public static final String ID = ExplorerMod.makeID(Insight.class.getSimpleName());
     public static final String IMG = makeCardPath("Insight.png");
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     // /TEXT DECLARATION/
 
@@ -30,8 +34,7 @@ public class Insight extends AbstractDynamicCard {
     public static final CardColor COLOR = TheExplorer.Enums.COLOR_GRAY;
 
     private static final int COST = 0;
-    private static final int BLOCK = 3;
-    private static final int UPGRADE_PLUS_BLOCK = 2;
+    private static final int BLOCK = 4;
 
 
     // /STAT DECLARATION/
@@ -40,6 +43,7 @@ public class Insight extends AbstractDynamicCard {
     public Insight() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseBlock = BLOCK;
+        this.exhaust = true;
     }
 
     // Actions the card should do.
@@ -54,7 +58,8 @@ public class Insight extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
+            this.exhaust = false;
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

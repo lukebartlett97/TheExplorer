@@ -146,7 +146,8 @@
   },
   "theExplorer:Insight": {
     "NAME": "Insight",
-    "DESCRIPTION": "Gain !B! Block. NL Add a copy of the next card you play this turn to your hand. (Cannot copy another Insight)"
+    "DESCRIPTION": "Gain !B! Block. NL Add a copy of the next card you play this turn to your hand. (Cannot copy another Insight) NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a copy of the next card you play this turn to your hand. (Cannot copy another Insight)"
   },
   "theExplorer:Inspect": {
     "NAME": "Inspect",
@@ -155,7 +156,7 @@
   },
   "theExplorer:InvigoratingBrew": {
     "NAME": "Invigorating Brew",
-    "DESCRIPTION": "Gain !B! Block. theexplorer:Concoct. NL [#DC1515]Attack[]: Gain 1 [E]. NL [#22B21B]Skill[]: Gain 2 Dexterity until end of turn. NL [#2FD0E0]Power[]: Remove Stealth from all enemies."
+    "DESCRIPTION": "Gain !B! Block. theexplorer:Concoct. NL [#DC1515]Attack[]: Gain [E]. NL [#22B21B]Skill[]: Gain 2 Dexterity until end of turn. NL [#2FD0E0]Power[]: Remove Stealth from all enemies."
   },
   "theExplorer:IvyTrap": {
     "NAME": "Ivy Trap",
@@ -197,7 +198,7 @@
   },
   "theExplorer:Overload": {
     "NAME": "Overload",
-    "DESCRIPTION": "Gain !B! Block. Apply 2 Frail to yourself."
+    "DESCRIPTION": "Gain !B! Block. NL Apply 2 Frail to yourself."
   },
   "theExplorer:OwlCompanion": {
     "NAME": "Owl Companion",
@@ -247,7 +248,7 @@
   },
   "theExplorer:Rebound": {
     "NAME": "Rebound",
-    "DESCRIPTION": "Deal !D! damage. NL If this Attack deals unblocked damage, gain 1 [E]."
+    "DESCRIPTION": "Deal !D! damage. NL If this Attack deals unblocked damage, gain [E]."
   },
   "theExplorer:Regrowth": {
     "NAME": "Regrowth",
@@ -314,7 +315,7 @@
   },
   "theExplorer:ToePoke": {
     "NAME": "Toe Poke",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy is being theexplorer:Researched, gain 1 [E] and draw 1 card."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is being theexplorer:Researched, gain [E] and draw 1 card."
   },
   "theExplorer:ToxicPlant": {
     "NAME": "Toxic Plant",
@@ -322,7 +323,7 @@
   },
   "theExplorer:Tracking": {
     "NAME": "Tracking",
-    "DESCRIPTION": "Gain 1 [E] for each enemy."
+    "DESCRIPTION": "Gain [E] for each enemy."
   },
   "theExplorer:Trip": {
     "NAME": "Trip",

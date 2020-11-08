@@ -44,6 +44,12 @@ public class OwlCompanionPower extends CompanionPower {
     }
 
     @Override
+    public void onInitialApplication() {
+        super.onInitialApplication();
+        act();
+    }
+
+    @Override
     public void atStartOfTurnPostDraw() {
         act();
     }
