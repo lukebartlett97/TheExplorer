@@ -2,8 +2,6 @@ package theExplorer.cards.attacks;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,9 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.CompanionActAction;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.CompanionPower;
-import theExplorer.powers.ResearchingPower;
-import theExplorer.util.CompanionService;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"

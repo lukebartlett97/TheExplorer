@@ -1,6 +1,5 @@
 package theExplorer.cards.skills;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,7 +9,6 @@ import theExplorer.ExplorerMod;
 import theExplorer.actions.RandomiseCostAction;
 import theExplorer.cards.AbstractDynamicCard;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.VenomPower;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 

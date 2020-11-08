@@ -20,7 +20,7 @@
   },
   "theExplorer:BlisteringPlant": {
     "NAME": "Blistering Plant",
-    "DESCRIPTION": "Apply !M! Vulnerable. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Vulnerable. NL Exhaust. Can be upgraded any number of times."
   },
   "theExplorer:BoxOfTricks": {
     "NAME": "Box Of Tricks",
@@ -127,9 +127,9 @@
     "NAME": "Headshot",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy is being theexplorer:Researched, they lose 1 Strength."
   },
-  "theExplorer:HedgehogCompanion": {
-    "NAME": "Hedgehog Companion",
-    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Hedgehog. NL Remove this card from your deck."
+  "theExplorer:FrogCompanion": {
+    "NAME": "Frog Companion",
+    "DESCRIPTION": "Replace your theexplorer:Companion with theexplorer:Frog. NL Remove this card from your deck."
   },
   "theExplorer:Highlander": {
     "NAME": "Highlander",
@@ -247,7 +247,7 @@
   },
   "theExplorer:Rebound": {
     "NAME": "Rebound",
-    "DESCRIPTION": "Deal !D! damage. If this Attack deals unblocked damage, gain 1 [E]."
+    "DESCRIPTION": "Deal !D! damage. NL If this Attack deals unblocked damage, gain 1 [E]."
   },
   "theExplorer:Regrowth": {
     "NAME": "Regrowth",
@@ -260,7 +260,7 @@
   },
   "theExplorer:ScaledPlant": {
     "NAME": "Scaled Plant",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust. Can be upgraded any number of times."
   },
   "theExplorer:ShoulderBlow": {
     "NAME": "Shoulder Blow",
@@ -272,7 +272,7 @@
   },
   "theExplorer:SpikyPlant": {
     "NAME": "Spiky Plant",
-    "DESCRIPTION": "Deal !D! Damage. NL Exhaust."
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust. Can be upgraded any number of times."
   },
   "theExplorer:SpudGun": {
     "NAME": "Spud Gun",
@@ -318,7 +318,7 @@
   },
   "theExplorer:ToxicPlant": {
     "NAME": "Toxic Plant",
-    "DESCRIPTION": "Apply !M! Poison. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Poison. NL Exhaust. Can be upgraded any number of times."
   },
   "theExplorer:Tracking": {
     "NAME": "Tracking",

@@ -3,7 +3,6 @@ package theExplorer.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ModHelper;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -37,7 +36,7 @@ public class SpawnMonsterAction extends AbstractGameAction {
                     this.m = (AbstractMonster) monsterClass.getDeclaredConstructor().newInstance();
                     this.m.drawX = x;
                     this.m.drawY = y;
-                }catch (NoSuchMethodException f) {
+                } catch (NoSuchMethodException f) {
                     this.m = (AbstractMonster) monsterClass.getDeclaredConstructor(float.class, float.class, int.class).newInstance(x, y, 0);
                     this.m.drawX = x;
                     this.m.drawY = y;
@@ -58,8 +57,8 @@ public class SpawnMonsterAction extends AbstractGameAction {
     }
 
     public void update() {
-        if(m != null) {
-            if(targetSlot < 0) {
+        if (m != null) {
+            if (targetSlot < 0) {
                 targetSlot = getPos();
             }
             AbstractDungeon.getCurrRoom().monsters.addMonster(targetSlot, m);
@@ -82,8 +81,8 @@ public class SpawnMonsterAction extends AbstractGameAction {
         int position = 0;
         Iterator var5 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
 
-        while(var5.hasNext()) {
-            AbstractMonster mo = (AbstractMonster)var5.next();
+        while (var5.hasNext()) {
+            AbstractMonster mo = (AbstractMonster) var5.next();
             if (this.m.drawX > mo.drawX) {
                 ++position;
             }

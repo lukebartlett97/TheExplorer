@@ -4,13 +4,10 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
-import theExplorer.cards.AbstractDynamicCard;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.CompanionPower;
 import theExplorer.util.CompanionService;
 
 import static theExplorer.ExplorerMod.makeCardPath;
@@ -75,9 +72,9 @@ public class CalmingRest extends CustomCard {
         super.applyPowers();
         if (CompanionService.getCompanionPower() != null) {
             int timesActed = CompanionService.getCompanionPower().getTimesActed();
-            if(timesActed > 0) {
+            if (timesActed > 0) {
                 this.block += timesActed * magicNumber;
-                if(this.block != this.baseBlock) {
+                if (this.block != this.baseBlock) {
                     this.isBlockModified = true;
                 }
             }

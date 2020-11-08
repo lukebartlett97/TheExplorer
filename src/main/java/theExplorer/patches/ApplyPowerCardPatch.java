@@ -12,7 +12,7 @@ import theExplorer.actions.AlertPowerAction;
 public class ApplyPowerCardPatch {
     @SpireInsertPatch(locator = Locator.class, localvars = {"powerToApply", "target"})
     public static void Insert(ApplyPowerAction self, AbstractPower powerToApply, AbstractCreature target) {
-       AbstractDungeon.actionManager.addToBottom(new AlertPowerAction(powerToApply, target));
+        AbstractDungeon.actionManager.addToBottom(new AlertPowerAction(powerToApply, target));
     }
 
     private static class Locator extends SpireInsertLocator {

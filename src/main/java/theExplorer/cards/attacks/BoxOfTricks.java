@@ -83,10 +83,10 @@ public class BoxOfTricks extends CustomCard {
 
     @Override
     public void applyPowers() {
-        for(AbstractCard cardPlayed : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
+        for (AbstractCard cardPlayed : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
             if (!typesPlayed.contains(cardPlayed.type)) {
                 typesPlayed.add(cardPlayed.type);
-                setCostForTurn(costForTurn-1);
+                setCostForTurn(costForTurn - 1);
             }
         }
         super.applyPowers();

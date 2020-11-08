@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PoisonPower;
 import theExplorer.ExplorerMod;
 import theExplorer.cards.AbstractDynamicCard;
-import theExplorer.util.ApplyPowerListener;
 import theExplorer.characters.TheExplorer;
+import theExplorer.util.ApplyPowerListener;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 // "How come this card extends CustomCard and not DynamicCard like all the rest?"
@@ -76,8 +76,8 @@ public class Outbreak extends AbstractDynamicCard implements ApplyPowerListener 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for(AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-            if(!monster.isDeadOrEscaped()) {
+        for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+            if (!monster.isDeadOrEscaped()) {
                 addToTop(new ApplyPowerAction(monster, p, new PoisonPower(monster, p, magicNumber)));
             }
         }
@@ -96,7 +96,7 @@ public class Outbreak extends AbstractDynamicCard implements ApplyPowerListener 
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target) {
-        if(power.ID.equals(PoisonPower.POWER_ID) && !target.isPlayer) {
+        if (power.ID.equals(PoisonPower.POWER_ID) && !target.isPlayer) {
             magicNumber = baseMagicNumber += defaultSecondMagicNumber;
         }
         applyPowers();

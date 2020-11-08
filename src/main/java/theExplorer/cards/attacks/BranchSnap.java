@@ -16,7 +16,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 
 import static theExplorer.ExplorerMod.makeCardPath;
@@ -95,42 +94,42 @@ public class BranchSnap extends CustomCard {
         AbstractPlayer player = AbstractDungeon.player;
         this.isDamageModified = false;
         if (mo != null) {
-            float tmp = (float)this.baseDamage;
+            float tmp = (float) this.baseDamage;
             Iterator var9 = player.relics.iterator();
 
-            while(var9.hasNext()) {
-                AbstractRelic r = (AbstractRelic)var9.next();
+            while (var9.hasNext()) {
+                AbstractRelic r = (AbstractRelic) var9.next();
                 tmp = r.atDamageModify(tmp, this);
-                if (this.baseDamage != (int)tmp) {
+                if (this.baseDamage != (int) tmp) {
                     this.isDamageModified = true;
                 }
             }
 
             AbstractPower p;
-            for(var9 = player.powers.iterator(); var9.hasNext(); tmp = p.atDamageGive(tmp, this.damageTypeForTurn, this)) {
-                p = (AbstractPower)var9.next();
+            for (var9 = player.powers.iterator(); var9.hasNext(); tmp = p.atDamageGive(tmp, this.damageTypeForTurn, this)) {
+                p = (AbstractPower) var9.next();
             }
 
             tmp = player.stance.atDamageGive(tmp, this.damageTypeForTurn, this);
-            if (this.baseDamage != (int)tmp) {
+            if (this.baseDamage != (int) tmp) {
                 this.isDamageModified = true;
             }
 
-            for(AbstractPower power : mo.powers) {
+            for (AbstractPower power : mo.powers) {
                 float increased = power.atDamageReceive(tmp, this.damageTypeForTurn, this);
                 float diff = increased - tmp;
-                if(power.ID.equals(VulnerablePower.POWER_ID)) {
+                if (power.ID.equals(VulnerablePower.POWER_ID)) {
                     increased += diff;
                 }
                 tmp = increased;
             }
 
-            for(var9 = player.powers.iterator(); var9.hasNext(); tmp = p.atDamageFinalGive(tmp, this.damageTypeForTurn, this)) {
-                p = (AbstractPower)var9.next();
+            for (var9 = player.powers.iterator(); var9.hasNext(); tmp = p.atDamageFinalGive(tmp, this.damageTypeForTurn, this)) {
+                p = (AbstractPower) var9.next();
             }
 
-            for(var9 = mo.powers.iterator(); var9.hasNext(); tmp = p.atDamageFinalReceive(tmp, this.damageTypeForTurn, this)) {
-                p = (AbstractPower)var9.next();
+            for (var9 = mo.powers.iterator(); var9.hasNext(); tmp = p.atDamageFinalReceive(tmp, this.damageTypeForTurn, this)) {
+                p = (AbstractPower) var9.next();
             }
 
             if (tmp < 0.0F) {

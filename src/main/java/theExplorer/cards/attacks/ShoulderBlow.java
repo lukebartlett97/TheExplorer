@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
-import theExplorer.actions.RockTossAction;
 import theExplorer.characters.TheExplorer;
 
 import static theExplorer.ExplorerMod.makeCardPath;

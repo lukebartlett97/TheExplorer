@@ -15,7 +15,7 @@ public class RandomiseCostAction extends AbstractGameAction {
     }
 
     public void update() {
-        if(DrawCardAction.drawnCards.size() > 0) {
+        if (DrawCardAction.drawnCards.size() > 0) {
             AbstractCard card = DrawCardAction.drawnCards.get(0);
             if (card.cost >= 0) {
                 int newCost = AbstractDungeon.cardRandomRng.random(3);

@@ -9,13 +9,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.CompanionRemoveAction;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.HedgehogCompanionPower;
-import theExplorer.powers.TurtleCompanionPower;
+import theExplorer.powers.FrogCompanionPower;
 import theExplorer.util.CompanionService;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 
-public class HedgehogCompanion extends CustomCard implements StartupCard {
+public class FrogCompanion extends CustomCard implements StartupCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,7 +24,7 @@ public class HedgehogCompanion extends CustomCard implements StartupCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = ExplorerMod.makeID(HedgehogCompanion.class.getSimpleName());
+    public static final String ID = ExplorerMod.makeID(FrogCompanion.class.getSimpleName());
     public static final String IMG = makeCardPath("Pow_Beta.png");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
@@ -46,7 +45,7 @@ public class HedgehogCompanion extends CustomCard implements StartupCard {
     // /STAT DECLARATION/
 
 
-    public HedgehogCompanion() {
+    public FrogCompanion() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.tags.add(CardTags.HEALING);
     }
@@ -69,7 +68,7 @@ public class HedgehogCompanion extends CustomCard implements StartupCard {
     @Override
     public boolean atBattleStartPreDraw() {
         addToBot(new CompanionRemoveAction(this.cardID));
-        CompanionService.setCompanion(HedgehogCompanionPower.class.getName());
+        CompanionService.setCompanion(FrogCompanionPower.class.getName());
         return true;
     }
 }

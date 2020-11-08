@@ -10,8 +10,6 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 import theExplorer.powers.ExhilaratePower;
-import theExplorer.powers.PitTrapPower;
-import theExplorer.powers.UpgradedPitTrapPower;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 

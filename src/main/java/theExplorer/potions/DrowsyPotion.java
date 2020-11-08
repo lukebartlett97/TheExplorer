@@ -11,7 +11,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theExplorer.ExplorerMod;
 import theExplorer.powers.SleepPower;
-import theExplorer.util.CompanionService;
 
 public class DrowsyPotion extends AbstractPotion {
 

@@ -1,7 +1,6 @@
 package theExplorer.cards.skills;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
@@ -11,7 +10,6 @@ import theExplorer.characters.TheExplorer;
 import static theExplorer.ExplorerMod.makeCardPath;
 
 public class Brace extends AbstractDynamicCard {
-
 
 
     // TEXT DECLARATION

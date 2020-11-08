@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ConstrictedPower;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 import theExplorer.powers.SleepPower;
@@ -69,7 +68,7 @@ public class SleepPowder extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractMonster monster : AbstractDungeon.getCurrRoom().monsters.monsters) {
-            if(!monster.isDeadOrEscaped()) {
+            if (!monster.isDeadOrEscaped()) {
                 addToBot(new ApplyPowerAction(monster, p, new SleepPower(monster, p, 1), 1));
             }
 

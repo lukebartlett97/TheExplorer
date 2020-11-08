@@ -19,7 +19,7 @@ public class FractureAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        if(monster.currentBlock > 0) {
+        if (monster.currentBlock > 0) {
             addToBot(new DamageAction(monster, damageInfo, attackEffect));
         }
         this.isDone = true;

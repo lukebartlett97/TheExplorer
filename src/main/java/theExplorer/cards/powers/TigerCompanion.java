@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.CompanionRemoveAction;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.OwlCompanionPower;
 import theExplorer.powers.TigerCompanionPower;
 import theExplorer.util.CompanionService;
 

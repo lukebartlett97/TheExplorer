@@ -1,6 +1,5 @@
 package theExplorer.cards.skills;
 
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.SoulboundField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,7 +12,6 @@ import theExplorer.powers.InsightPower;
 import static theExplorer.ExplorerMod.makeCardPath;
 
 public class Insight extends AbstractDynamicCard {
-
 
 
     // TEXT DECLARATION

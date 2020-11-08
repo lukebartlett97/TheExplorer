@@ -1,21 +1,17 @@
 package theExplorer.cards.attacks;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
-import theExplorer.actions.HatTossAction;
 import theExplorer.actions.LeechAction;
 import theExplorer.characters.TheExplorer;
 
 import static theExplorer.ExplorerMod.makeCardPath;
+
 public class Leech extends CustomCard {
 
     // TEXT DECLARATION

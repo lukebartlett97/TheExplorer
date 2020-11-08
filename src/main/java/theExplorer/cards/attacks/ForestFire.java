@@ -55,7 +55,7 @@ public class ForestFire extends CustomCard {
         ArrayList<AbstractCard> cardsPlayed = AbstractDungeon.actionManager.cardsPlayedThisTurn;
         int amount = cardsPlayed.get(cardsPlayed.size() - 1).uuid.equals(this.uuid) ? cardsPlayed.size() - 1 : cardsPlayed.size();
         for(int i = 0; i < amount; i++) {
-            addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
+            addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
             addToBot(new MakeTempCardInDrawPileAction(new Burn(), 1, true, true));
         }
     }

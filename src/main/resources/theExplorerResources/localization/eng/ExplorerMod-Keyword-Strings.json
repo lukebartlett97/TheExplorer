@@ -103,12 +103,12 @@
     "DESCRIPTION": "Every 3/2/1 times you shuffle your deck, gain 1 Strength."
   },
   {
-    "PROPER_NAME": "HEDGEHOG",
+    "PROPER_NAME": "FROG",
     "NAMES": [
-      "hedgehog",
-      "Hedgehog"
+      "frog",
+      "Frog"
     ],
-    "DESCRIPTION": "Whenever you receive unblocked attack damage, gain 1/2/3 Thorns."
+    "DESCRIPTION": "Whenever you receive unblocked attack damage, apply 1/2/3 Poison to ALL enemies."
   },
   {
     "PROPER_NAME": "TURTLE",

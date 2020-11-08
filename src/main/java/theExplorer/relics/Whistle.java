@@ -2,18 +2,9 @@ package theExplorer.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.random.Random;
 import theExplorer.ExplorerMod;
-import theExplorer.powers.ResearchStacksPower;
-import theExplorer.powers.ResearchingPower;
 import theExplorer.util.TextureLoader;
 
-import static theExplorer.ExplorerMod.logger;
 import static theExplorer.ExplorerMod.makeRelicPath;
 
 public class Whistle extends CustomRelic {

@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 import theExplorer.powers.ResearchStacksPower;
-import theExplorer.util.CompanionService;
 import theExplorer.util.ResearchingService;
 
 import static theExplorer.ExplorerMod.makeCardPath;
@@ -92,7 +91,7 @@ public class StrategicPlanning extends CustomCard {
     @Override
     public void initializeDescription() {
         this.rawDescription = cardStrings.DESCRIPTION;
-        if(AbstractDungeon.isPlayerInDungeon()) {
+        if (AbstractDungeon.isPlayerInDungeon()) {
             int stacks = ResearchingService.getAmount();
             this.rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0] + stacks + cardStrings.EXTENDED_DESCRIPTION[1];
         }

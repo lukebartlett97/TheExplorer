@@ -525,7 +525,7 @@ public class ExplorerMod implements
         BaseMod.addCard(new Contagion());
         BaseMod.addCard(new Exhilarate());
         BaseMod.addCard(new FlowerPot());
-        BaseMod.addCard(new HedgehogCompanion());
+        BaseMod.addCard(new FrogCompanion());
         BaseMod.addCard(new ImprovisedDefenses());
         BaseMod.addCard(new IvyTrap());
         BaseMod.addCard(new MortalTorrent());
@@ -611,7 +611,7 @@ public class ExplorerMod implements
         UnlockTracker.unlockCard(Contagion.ID);
         UnlockTracker.unlockCard(Exhilarate.ID);
         UnlockTracker.unlockCard(FlowerPot.ID);
-        UnlockTracker.unlockCard(HedgehogCompanion.ID);
+        UnlockTracker.unlockCard(FrogCompanion.ID);
         UnlockTracker.unlockCard(ImprovisedDefenses.ID);
         UnlockTracker.unlockCard(IvyTrap.ID);
         UnlockTracker.unlockCard(MortalTorrent.ID);

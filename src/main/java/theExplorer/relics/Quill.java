@@ -2,11 +2,7 @@ package theExplorer.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
@@ -37,7 +33,7 @@ public class Quill extends CustomRelic {
     public void onMonsterDeath(AbstractMonster m) {
         if (m.hasPower(ResearchingPower.POWER_ID)) {
             this.flash();
-            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergisedPower(AbstractDungeon.player, AbstractDungeon.player,m.getPower(ResearchingPower.POWER_ID).amount)));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EnergisedPower(AbstractDungeon.player, AbstractDungeon.player, m.getPower(ResearchingPower.POWER_ID).amount)));
         }
     }
 

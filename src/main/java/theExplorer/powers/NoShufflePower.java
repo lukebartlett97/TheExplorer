@@ -3,16 +3,11 @@ package theExplorer.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.NoDrawPower;
 import theExplorer.ExplorerMod;
 import theExplorer.util.TextureLoader;
@@ -50,7 +45,7 @@ public class NoShufflePower extends ExplorerPower {
 
     @Override
     public void onCardDraw(AbstractCard card) {
-        if(AbstractDungeon.player.drawPile.isEmpty() && !AbstractDungeon.player.hasPower(NoDrawPower.POWER_ID)) {
+        if (AbstractDungeon.player.drawPile.isEmpty() && !AbstractDungeon.player.hasPower(NoDrawPower.POWER_ID)) {
             addToTop(new ApplyPowerAction(owner, owner, new NoDrawPower(owner)));
         }
     }

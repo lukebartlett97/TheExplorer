@@ -36,12 +36,12 @@ public class Painkiller extends CustomRelic implements ApplyPowerListener {
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target) {
-        if(target.isPlayer && power.type == AbstractPower.PowerType.DEBUFF) {
-            if(power.amount > 1) {
+        if (target.isPlayer && power.type == AbstractPower.PowerType.DEBUFF) {
+            if (power.amount > 1) {
                 power.amount -= 1;
                 flash();
             }
-            if(power.amount < -1) {
+            if (power.amount < -1) {
                 power.amount += 1;
                 flash();
             }

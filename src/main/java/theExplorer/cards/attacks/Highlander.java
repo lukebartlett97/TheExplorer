@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
-import theExplorer.actions.CompanionActAction;
 import theExplorer.characters.TheExplorer;
 
 import java.util.stream.Stream;
@@ -70,7 +69,7 @@ public class Highlander extends CustomCard {
         int uniques = 0;
         int count = 0;
         AbstractPlayer p = AbstractDungeon.player;
-        if(AbstractDungeon.isPlayerInDungeon() && p != null && p.drawPile != null) {
+        if (AbstractDungeon.isPlayerInDungeon() && p != null && p.drawPile != null) {
             Stream<String> drawIDs = p.drawPile.group.stream().map(x -> x.cardID);
             Stream<String> handIDs = p.hand.group.stream().map(x -> x.cardID);
             Stream<String> discardIDs = p.discardPile.group.stream().map(x -> x.cardID);
@@ -113,7 +112,7 @@ public class Highlander extends CustomCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(isHighlander) {
+        if (isHighlander) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
             addToBot(new GainBlockAction(p, p, this.block));
         }

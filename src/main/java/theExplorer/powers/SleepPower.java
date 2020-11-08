@@ -2,13 +2,11 @@ package theExplorer.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
 import com.evacipated.cardcrawl.mod.stslib.powers.StunMonsterPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
@@ -55,10 +53,10 @@ public class SleepPower extends ExplorerPower {
 
     private int getTextureIndex() {
         int index = sleepTimer - 1;
-        if(index < 0) {
+        if (index < 0) {
             index = 0;
         }
-        if(index > 2) {
+        if (index > 2) {
             index = 2;
         }
         return index;
@@ -74,7 +72,7 @@ public class SleepPower extends ExplorerPower {
         if (sleepTimer > 1) {
             sleepTimer--;
         } else {
-            addToTop(new ApplyPowerAction(owner, source, new StunMonsterPower((AbstractMonster)owner, this.amount), this.amount));
+            addToTop(new ApplyPowerAction(owner, source, new StunMonsterPower((AbstractMonster) owner, this.amount), this.amount));
             addToBot(new RemoveSpecificPowerAction(owner, owner, SleepPower.POWER_ID));
         }
         updateTextures();

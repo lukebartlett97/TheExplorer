@@ -113,23 +113,23 @@
         },
         "theExplorer:WolfCompanionPower": {
                 "NAME": "Wolfy",
-                "DESCRIPTIONS": ["At the end of your turn, deal #b", " damage to a random enemy being researched."]
+                "DESCRIPTIONS": ["At the end of your turn, deal #b", " damage to a random enemy being researched.", "Howl"]
         },
         "theExplorer:TurtleCompanionPower": {
                 "NAME": "Turtle",
-                "DESCRIPTIONS": ["At the start of combat, gain #b", " Artifact."]
+                "DESCRIPTIONS": ["At the start of combat, gain #b", " Artifact.", "*turtle noises*"]
         },
         "theExplorer:OwlCompanionPower": {
                 "NAME": "Owl",
-                "DESCRIPTIONS": ["At the start of your turn, draw #b", " card(s)."]
+                "DESCRIPTIONS": ["At the start of your turn, draw #b", " card(s).", "Hoot"]
         },
-        "theExplorer:HedgehogCompanionPower": {
-                "NAME": "Hedgehog",
-                "DESCRIPTIONS": ["Whenever you receive unblocked attack damage, gain #b", " Thorns."]
+        "theExplorer:FrogCompanionPower": {
+                "NAME": "Frog",
+                "DESCRIPTIONS": ["Whenever you receive unblocked attack damage, apply #b", " Poison to ALL enemies.", "Ribbit"]
         },
         "theExplorer:TigerCompanionPower": {
                 "NAME": "Tiger",
-                "DESCRIPTIONS": ["Every #b", " times you shuffle your deck, gain #b", " Strength."]
+                "DESCRIPTIONS": ["Every #b", " times you shuffle your deck, gain #b", " Strength.", "Rawr"]
         },
         "theExplorer:NoShufflePower": {
                 "NAME": "No Shuffle",

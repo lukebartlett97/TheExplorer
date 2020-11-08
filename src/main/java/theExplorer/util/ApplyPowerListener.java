@@ -5,6 +5,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public interface ApplyPowerListener {
 
-    public void onApplyPower(AbstractPower power, AbstractCreature target);
+    void onApplyPower(AbstractPower power, AbstractCreature target);
 
 }

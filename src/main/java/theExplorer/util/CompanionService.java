@@ -34,7 +34,7 @@ public class CompanionService {
                 } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
                     e.printStackTrace();
                 }
-                if(power != null) {
+                if (power != null) {
                     explorer.setCompanion(power);
                 }
             } catch (ClassNotFoundException e) {
@@ -47,8 +47,8 @@ public class CompanionService {
     }
 
     public static CompanionPower getCompanionPower() {
-        if(AbstractDungeon.player != null && AbstractDungeon.player.powers != null) {
-            for(AbstractPower power : AbstractDungeon.player.powers) {
+        if (AbstractDungeon.player != null && AbstractDungeon.player.powers != null) {
+            for (AbstractPower power : AbstractDungeon.player.powers) {
                 if (power instanceof CompanionPower) {
                     return (CompanionPower) power;
                 }

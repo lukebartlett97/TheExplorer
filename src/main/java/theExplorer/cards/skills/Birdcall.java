@@ -1,7 +1,5 @@
 package theExplorer.cards.skills;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,10 +8,6 @@ import theExplorer.ExplorerMod;
 import theExplorer.actions.BirdcallAction;
 import theExplorer.cards.AbstractDynamicCard;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.DoubleUpPower;
-import theExplorer.powers.NoShufflePower;
-
-import java.util.ArrayList;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 

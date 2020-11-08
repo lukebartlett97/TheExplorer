@@ -9,9 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 import theExplorer.powers.ContagionPower;
-import theExplorer.powers.FlowerPotPower;
-import theExplorer.powers.UpgradedFlowerPotPower;
-import theExplorer.util.PlantService;
 
 import static theExplorer.ExplorerMod.makeCardPath;
 

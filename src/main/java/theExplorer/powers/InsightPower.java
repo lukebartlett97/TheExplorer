@@ -6,13 +6,9 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theExplorer.ExplorerMod;
 import theExplorer.cards.skills.Insight;
 import theExplorer.util.TextureLoader;
@@ -50,12 +46,12 @@ public class InsightPower extends ExplorerPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if(this.amount > 0 && !card.cardID.equals(Insight.ID)) {
+        if (this.amount > 0 && !card.cardID.equals(Insight.ID)) {
             AbstractCard tmp = card.makeSameInstanceOf();
             addToBot(new MakeTempCardInHandAction(tmp));
             amount--;
         }
-        if(amount < 1) {
+        if (amount < 1) {
             addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
         }
     }

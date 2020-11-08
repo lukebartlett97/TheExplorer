@@ -4,6 +4,7 @@ import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
@@ -33,6 +34,7 @@ import theExplorer.powers.CompanionPower;
 import theExplorer.powers.ResearchStacksPower;
 import theExplorer.powers.WolfCompanionPower;
 import theExplorer.relics.*;
+import theExplorer.util.CompanionService;
 
 import java.util.ArrayList;
 
@@ -321,6 +323,16 @@ public class TheExplorer extends CustomPlayer {
     @Override
     public void applyStartOfTurnCards() {
         super.applyStartOfTurnCards();
+
+    }
+
+    @Override
+    public void render(SpriteBatch sb) {
+        super.render(sb);
+        CompanionPower companionPower = CompanionService.getCompanionPower();
+        if(companionPower != null) {
+            companionPower.getCompanion().render(sb);
+        }
 
     }
 }

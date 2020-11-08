@@ -1,7 +1,6 @@
 package theExplorer.cards.skills;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
@@ -13,7 +12,6 @@ import theExplorer.characters.TheExplorer;
 import static theExplorer.ExplorerMod.makeCardPath;
 
 public class Camouflage extends AbstractDynamicCard {
-
 
 
     // TEXT DECLARATION

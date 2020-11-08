@@ -34,7 +34,7 @@ public class Decoy extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     //TODO: Add real art.
-    public static final String IMG = makeCardPath("Ski_Beta.png");
+    public static final String IMG = makeCardPath("Decoy.png");
 
     public static final String NAME = cardStrings.NAME;
 

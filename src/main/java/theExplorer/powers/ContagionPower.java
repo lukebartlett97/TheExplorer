@@ -3,10 +3,6 @@ package theExplorer.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -50,9 +46,9 @@ public class ContagionPower extends ExplorerPower {
 
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if(power.ID.equals(PoisonPower.POWER_ID) && source == owner && target != owner) {
-            for(AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-                if(monster != target && !monster.isDeadOrEscaped()) {
+        if (power.ID.equals(PoisonPower.POWER_ID) && source == owner && target != owner) {
+            for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+                if (monster != target && !monster.isDeadOrEscaped()) {
                     addToTop(new ApplyPowerAction(monster, target, new PoisonPower(monster, target, amount * power.amount)));
                 }
             }

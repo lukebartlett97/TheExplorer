@@ -7,9 +7,11 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.UnblockedAction;
 import theExplorer.util.UnblockedEventListener;
@@ -44,7 +46,7 @@ public class CorruptedBlade extends CustomCard implements UnblockedEventListener
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheExplorer.Enums.COLOR_GRAY;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int DAMAGE = 5;
     private static final int POISON = 5;
     private static final int UPGRADE_PLUS_DMG = 2;

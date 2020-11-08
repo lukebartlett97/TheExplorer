@@ -21,38 +21,38 @@ public class AlertPowerAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        for(AbstractCard card : AbstractDungeon.player.drawPile.group) {
-            if(card instanceof ApplyPowerListener) {
+        for (AbstractCard card : AbstractDungeon.player.drawPile.group) {
+            if (card instanceof ApplyPowerListener) {
                 ExplorerMod.logger.info("LUKE Notifying applyPower to card: " + card.cardID);
                 ((ApplyPowerListener) card).onApplyPower(powerToApply, target);
             }
         }
-        for(AbstractCard card : AbstractDungeon.player.hand.group) {
-            if(card instanceof ApplyPowerListener) {
+        for (AbstractCard card : AbstractDungeon.player.hand.group) {
+            if (card instanceof ApplyPowerListener) {
                 ExplorerMod.logger.info("LUKE Notifying applyPower to card: " + card.cardID);
                 ((ApplyPowerListener) card).onApplyPower(powerToApply, target);
             }
         }
-        for(AbstractCard card : AbstractDungeon.player.discardPile.group) {
-            if(card instanceof ApplyPowerListener) {
+        for (AbstractCard card : AbstractDungeon.player.discardPile.group) {
+            if (card instanceof ApplyPowerListener) {
                 ExplorerMod.logger.info("LUKE Notifying applyPower to card: " + card.cardID);
                 ((ApplyPowerListener) card).onApplyPower(powerToApply, target);
             }
         }
-        for(AbstractCard card : AbstractDungeon.player.exhaustPile.group) {
-            if(card instanceof ApplyPowerListener) {
+        for (AbstractCard card : AbstractDungeon.player.exhaustPile.group) {
+            if (card instanceof ApplyPowerListener) {
                 ExplorerMod.logger.info("LUKE Notifying applyPower to card: " + card.cardID);
                 ((ApplyPowerListener) card).onApplyPower(powerToApply, target);
             }
         }
-        for(AbstractCard card : AbstractDungeon.player.limbo.group) {
-            if(card instanceof ApplyPowerListener) {
+        for (AbstractCard card : AbstractDungeon.player.limbo.group) {
+            if (card instanceof ApplyPowerListener) {
                 ExplorerMod.logger.info("LUKE Notifying applyPower to card: " + card.cardID);
                 ((ApplyPowerListener) card).onApplyPower(powerToApply, target);
             }
         }
-        for(AbstractRelic relic : AbstractDungeon.player.relics) {
-            if(relic instanceof ApplyPowerListener) {
+        for (AbstractRelic relic : AbstractDungeon.player.relics) {
+            if (relic instanceof ApplyPowerListener) {
                 ExplorerMod.logger.info("LUKE Notifying applyPower to relic: " + relic.relicId);
                 ((ApplyPowerListener) relic).onApplyPower(powerToApply, target);
             }

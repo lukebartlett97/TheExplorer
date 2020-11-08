@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import theExplorer.ExplorerMod;
-import theExplorer.cards.powers.TripwireTrap;
 import theExplorer.util.TextureLoader;
 
 public class TripwireTrapPower extends ExplorerPower {

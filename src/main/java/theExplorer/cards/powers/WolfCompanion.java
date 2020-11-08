@@ -2,18 +2,13 @@ package theExplorer.cards.powers;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.StartupCard;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import theExplorer.ExplorerMod;
 import theExplorer.actions.CompanionRemoveAction;
 import theExplorer.characters.TheExplorer;
-import theExplorer.powers.MortalTorrentPower;
 import theExplorer.powers.WolfCompanionPower;
 import theExplorer.util.CompanionService;
 

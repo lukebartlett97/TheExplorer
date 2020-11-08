@@ -1,19 +1,13 @@
 package theExplorer.potions;
 
-import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theExplorer.ExplorerMod;
-import theExplorer.actions.SpawnMonsterAction;
-import theExplorer.characters.TheExplorer;
 import theExplorer.util.CompanionService;
 
 public class AnimalPotion extends AbstractPotion {

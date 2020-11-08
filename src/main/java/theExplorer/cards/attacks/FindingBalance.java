@@ -2,7 +2,6 @@ package theExplorer.cards.attacks;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,7 +11,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.VulnerablePower;
 import theExplorer.ExplorerMod;
 import theExplorer.characters.TheExplorer;
 
@@ -82,10 +80,10 @@ public class FindingBalance extends CustomCard {
         baseBlock = BLOCK + (upgradedBlock ? UPGRADE_BLOCK : 0);
         int skillCount = cardCount(CardType.SKILL);
         int attackCount = cardCount(CardType.ATTACK);
-        if(skillCount < attackCount) {
+        if (skillCount < attackCount) {
             baseBlock -= REDUCTION;
         }
-        if(attackCount < skillCount) {
+        if (attackCount < skillCount) {
             baseDamage -= REDUCTION;
         }
     }
@@ -103,10 +101,10 @@ public class FindingBalance extends CustomCard {
     private void resetTempValues() {
         baseDamage = DAMAGE + (upgradedDamage ? UPGRADE_DAMAGE : 0);
         baseBlock = BLOCK + (upgradedBlock ? UPGRADE_BLOCK : 0);
-        if(block != baseBlock) {
+        if (block != baseBlock) {
             isBlockModified = true;
         }
-        if(damage != baseDamage) {
+        if (damage != baseDamage) {
             isDamageModified = true;
         }
     }
@@ -127,7 +125,7 @@ public class FindingBalance extends CustomCard {
 
     private int cardCount(CardType cardType) {
         int out = 0;
-        if(AbstractDungeon.isPlayerInDungeon()) {
+        if (AbstractDungeon.isPlayerInDungeon()) {
             out += (int) AbstractDungeon.player.drawPile.group.stream().filter(x -> x.type == cardType).count();
             out += (int) AbstractDungeon.player.hand.group.stream().filter(x -> x.type == cardType).count();
             out += (int) AbstractDungeon.player.discardPile.group.stream().filter(x -> x.type == cardType).count();

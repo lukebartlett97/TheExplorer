@@ -61,6 +61,7 @@ public class BrambleWeed extends CustomCard implements UnblockedEventListener {
         // Aside from baseDamage/MagicNumber/Block there's also a few more.
         // Just type this.base and let intelliJ auto complete for you, or, go read up AbstractCard
 
+        this.isMultiDamage = true;
         baseDamage = DAMAGE;
         this.cardsToPreview = PlantService.getRandomPlant(false);
     }
@@ -68,7 +69,7 @@ public class BrambleWeed extends CustomCard implements UnblockedEventListener {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAllEnemiesAction(p, this.damage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         for(AbstractMonster monster : AbstractDungeon.getMonsters().monsters)
         {
             if(!monster.isDeadOrEscaped()) {
